@@ -16,21 +16,33 @@ Black Kaftan
 
 <td align="center">
 <img src="green-chanderi-kaftan.png.png" width="250"/><br>
-Green Chanderi
+Green Chanderi Kaftan
 </td>
 
 <td align="center">
 <img src="green-yellow-kaftan.png.png" width="250"/><br>
-Green Yellow
+Green Yellow Kaftan
 </td>
 </tr>
 
 <tr>
 <td align="center">
+<img src="kaftan.png.png" width="250"/><br>
+Classic Kaftan
+</td>
+
+<td align="center">
+<img src="mixed-design-ecoprint.png.png" width="250"/><br>
+Mixed Design Ecoprint
+</td>
+
+<td align="center">
 <img src="premium-ecoprint.png.png" width="250"/><br>
 Premium Ecoprint
 </td>
+</tr>
 
+<tr>
 <td align="center">
 <img src="pure-silk-kaftan.png.png" width="250"/><br>
 Pure Silk Kaftan
@@ -40,9 +52,19 @@ Pure Silk Kaftan
 <img src="red-yellow-kaftan.png.png" width="250"/><br>
 Red Yellow Kaftan
 </td>
+
+<td align="center">
+<img src="rust-coloured-kaftan.png.png" width="250"/><br>
+Rust Coloured Kaftan
+</td>
 </tr>
 
 <tr>
+<td align="center">
+<img src="yellow-kaftan-tessera.png.png" width="250"/><br>
+Yellow Kaftan Tessera
+</td>
+
 <td align="center">
 <img src="yellow-marigold-modal.png.png" width="250"/><br>
 Yellow Marigold Modal
