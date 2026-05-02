@@ -1,27 +1,51 @@
-## 🌿 About Tessera
+## 🌿 Tessera
 
-Tessera is a sustainable fashion label focused on ecoprints, natural dyes, and slow fashion craftsmanship.
+Ecoprint. Natural dye. Slow luxury.  
+Crafted garments where nature leaves its signature.
 
-Each piece reflects organic textures, botanical impressions, and timeless design.## 📸 Product Showcase
+---
 
-### Black Kaftan
-<img src="black-kaftan.png.png" width="300"/>
+## 📸 Product Showcase
 
-### Green Chanderi
-<img src="green-chanderi-kaftan.png.png" width="300"/>
+<table>
+<tr>
+<td align="center">
+<img src="black-kaftan.png.png" width="250"/><br>
+Black Kaftan
+</td>
 
-### Green Yellow
-<img src="green-yellow-kaftan.png.png" width="300"/>
+<td align="center">
+<img src="green-chanderi-kaftan.png.png" width="250"/><br>
+Green Chanderi
+</td>
 
-### Premium Ecoprint
-<img src="premium-ecoprint.png.png" width="300"/>
+<td align="center">
+<img src="green-yellow-kaftan.png.png" width="250"/><br>
+Green Yellow
+</td>
+</tr>
 
-### Pure Silk Kaftan
-<img src="pure-silk-kaftan.png.png" width="300"/>
+<tr>
+<td align="center">
+<img src="premium-ecoprint.png.png" width="250"/><br>
+Premium Ecoprint
+</td>
 
-### Red Yellow Kaftan
-<img src="red-yellow-kaftan.png.png" width="300"/>
+<td align="center">
+<img src="pure-silk-kaftan.png.png" width="250"/><br>
+Pure Silk Kaftan
+</td>
 
-### Yellow Marigold Modal
-<img src="yellow-marigold-modal.png.png" width="300"/>
+<td align="center">
+<img src="red-yellow-kaftan.png.png" width="250"/><br>
+Red Yellow Kaftan
+</td>
+</tr>
 
+<tr>
+<td align="center">
+<img src="yellow-marigold-modal.png.png" width="250"/><br>
+Yellow Marigold Modal
+</td>
+</tr>
+</table>
