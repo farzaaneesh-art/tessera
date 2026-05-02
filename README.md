@@ -1,3 +1,4 @@
+
 ## 🌿 Tessera
 
 Ecoprint. Natural dye. Slow luxury.  
@@ -42,8 +43,7 @@ Premium Ecoprint
 </td>
 </tr>
 
-
-
+<tr>
 <td align="center">
 <img src="red-yellow-kaftan.png.png" width="250"/><br>
 Red Yellow Kaftan
@@ -53,17 +53,20 @@ Red Yellow Kaftan
 <img src="rust-coloured-kaftan.png.png" width="250"/><br>
 Rust Coloured Kaftan
 </td>
-</tr>
 
-<tr>
 <td align="center">
 <img src="yellow-kaftan-tessera.png.png" width="250"/><br>
 Yellow Kaftan Tessera
 </td>
+</tr>
 
+<tr>
 <td align="center">
 <img src="yellow-marigold-modal.png.png" width="250"/><br>
 Yellow Marigold Modal
 </td>
+
+<td></td>
+<td></td>
 </tr>
 </table>
