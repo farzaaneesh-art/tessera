@@ -1,0 +1,10 @@
+black-kaftan.png.png
+green-chanderi-kaftan.png.png
+green-yellow-kaftan.png.png
+kaftan.png.png
+mixed-design-ecoprint.png.png
+premium-ecoprint.png.png
+red-yellow-kaftan.png.png
+rust-coloured-kaftan.png.png
+yellow-kaftan-tessera.png.png
+yellow-marigold-modal.png.png
