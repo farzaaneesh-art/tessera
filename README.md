@@ -1,25 +1,27 @@
-# Tessera
+## 🌿 About Tessera
 
-Sustainable fashion brand focused on ecoprints, natural dyes, and slow fashion.
+Tessera is a sustainable fashion label focused on ecoprints, natural dyes, and slow fashion craftsmanship.
 
----
+Each piece reflects organic textures, botanical impressions, and timeless design.## 📸 Product Showcase
 
-## 📸 Product Showcase
+### Black Kaftan
+<img src="black-kaftan.png.png" width="300"/>
 
-![Black Kaftan](black-kaftan.png.png)
+### Green Chanderi
+<img src="green-chanderi-kaftan.png.png" width="300"/>
 
-![Green Chanderi Kaftan](green-chanderi-kaftan.png.png)
+### Green Yellow
+<img src="green-yellow-kaftan.png.png" width="300"/>
 
-![Green Yellow Kaftan](green-yellow-kaftan.png.png)
+### Premium Ecoprint
+<img src="premium-ecoprint.png.png" width="300"/>
 
-![Mixed Design Ecoprint](mixed-design-ecoprint.png.png)
+### Pure Silk Kaftan
+<img src="pure-silk-kaftan.png.png" width="300"/>
 
-![Premium Ecoprint](premium-ecoprint.png.png)
+### Red Yellow Kaftan
+<img src="red-yellow-kaftan.png.png" width="300"/>
 
-![Red Yellow Kaftan](red-yellow-kaftan.png.png)
+### Yellow Marigold Modal
+<img src="yellow-marigold-modal.png.png" width="300"/>
 
-![Rust Coloured Kaftan](rust-coloured-kaftan.png.png)
-
-![Yellow Kaftan Tessera](yellow-kaftan-tessera.png.png)
-
-![Yellow Marigold Modal](yellow-marigold-modal.png.png)
