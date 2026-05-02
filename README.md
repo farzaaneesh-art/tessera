@@ -42,11 +42,7 @@ Premium Ecoprint
 </td>
 </tr>
 
-<tr>
-<td align="center">
-<img src="pure-silk-kaftan.png.png" width="250"/><br>
-Pure Silk Kaftan
-</td>
+
 
 <td align="center">
 <img src="red-yellow-kaftan.png.png" width="250"/><br>
