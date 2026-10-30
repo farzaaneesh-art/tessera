@@ -17,3 +17,21 @@ Which one is yours? Tell us the number 👇
 DM "KAFTAN" to order.
 
 #ecoprint #naturaldye #botanicalprint #kaftan #slowfashion #handmadeinindia #chanderisilk #sustainablefashion #kaftandress #ecoprinting
+
+---
+
+# Real-footage reel — `tessera-real-reel.mp4`
+
+10.5s, 1080×1920, cut from 4 phone clips (IMG_1712, 1713, 1715, 1716). Original audio dropped (room noise only), so add a sound in the app. The raw clips are not in the repo; rebuild with:
+
+`python3 reel/make_real_reel.py IMG_1716.mov IMG_1713.mov IMG_1712.mov IMG_1715.mov`
+
+## Caption
+
+This is what real leaves leave behind. 🍃
+
+The yellow, the purple, the little orange blooms: none of it was painted on. Each mark was pressed into the cloth straight from a leaf or a flower.
+
+One piece. One print. DM "KAFTAN" to order.
+
+#ecoprint #naturaldye #botanicalprint #kaftan #slowfashion #ecoprinting #sustainablefashion #kaftandress
