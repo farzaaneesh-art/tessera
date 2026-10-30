@@ -1,0 +1,4 @@
+# Cut clips are rebuilt from the original phone videos (see ../caption.md); render cache is local.
+assets/*.mp4
+.hyperframes/
+node_modules/

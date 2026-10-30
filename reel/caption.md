@@ -60,3 +60,28 @@ Every print is a real leaf or flower pressed into the fabric. One piece only. DM
 - Reply to every comment in the first hour; reply with a question to keep threads going.
 - Share to your Story with a poll sticker ("Would you wear this? Yes / Obviously").
 - Hashtags (3–5 max): #ecoprint #naturaldye #botanicalprint #slowfashion #kaftan
+
+---
+
+# Drape reel — `tessera-drape-reel.mp4` (HyperFrames)
+
+13.3s, 1080×1920. "1 dupatta, 3 ways": hook → 01 The wrap → 02 The cape → swirl → 03 Open & easy → comment prompt.
+Built with HyperFrames in `hf-drape/` (edit text in `hf-drape/compositions/s*.html`, then `npx hyperframes render`).
+The cut clips in `hf-drape/assets/` are not committed. Rebuild them from the WhatsApp videos with
+`ffmpeg -ss START -to END -i SRC -an -vf "crop=…,scale=1080:1920" …` using these ranges:
+s1 12.38.37 13.6–15.2 · s2 12.38.26 0.0–2.6 · s3 12.36.42 3.5–6.0 · s4 12.37.03 5.6–7.0 · s5 12.38.37 21.0–23.6 · s6 12.37.03 23.0–25.6
+
+## Caption
+
+1, 2 or 3? Tell us below 👇
+
+One dupatta, three moods. Save this for your next "what do I wear" moment.
+
+DM "DUPATTA" to order.
+
+#dupattastyling #dupattadraping #kaftan #ethnicwear #howtostyle #slowfashion #blockprint
+
+## Notes
+
+- Save-and-comment bait is the whole point of this format: reply to every "1/2/3" comment.
+- Add a trending sound in the app. Pick one with a clear beat and line the cuts up if you can.
