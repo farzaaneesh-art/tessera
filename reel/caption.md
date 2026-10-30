@@ -35,3 +35,28 @@ The yellow, the purple, the little orange blooms: none of it was painted on. Eac
 One piece. One print. DM "KAFTAN" to order.
 
 #ecoprint #naturaldye #botanicalprint #kaftan #slowfashion #ecoprinting #sustainablefashion #kaftandress
+
+---
+
+# Viral cut — `tessera-viral-reel.mp4`
+
+5.8s, loops seamlessly (last frame = first frame). Built from IMG_1715 + IMG_1716 only. Rebuild:
+
+`python3 reel/make_viral_reel.py IMG_1715.mov IMG_1716.mov`
+
+## Caption (keep it short — the video does the work)
+
+Guess how many leaves are on this one 🍃👇
+
+## Pinned comment (post it yourself, then pin)
+
+Every print is a real leaf or flower pressed into the fabric. One piece only. DM "KAFTAN" to order.
+
+## Posting checklist
+
+- Add a trending sound in the app (volume low). A silent reel gets pushed less.
+- Cover: frame 1 ("Nobody painted this."). Check it in the 4:5 grid preview.
+- Post when your followers are most active (Insights → Total followers → Most active times).
+- Reply to every comment in the first hour; reply with a question to keep threads going.
+- Share to your Story with a poll sticker ("Would you wear this? Yes / Obviously").
+- Hashtags (3–5 max): #ecoprint #naturaldye #botanicalprint #slowfashion #kaftan
