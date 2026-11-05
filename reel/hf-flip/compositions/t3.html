@@ -1,0 +1,24 @@
+<template>
+    <style>
+      #root { position: absolute; inset: 0; overflow: hidden; font-family: "Inter", sans-serif; }
+      .frame { position: absolute; inset: 0; }
+      .frame video { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      /* Copy stays in the 168-1330 px band the Reels UI leaves clear. */
+      .card { position: absolute; left: 0; right: 0; top: 300px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+      /* Plum and cream taken from the purple leaf prints and the base cloth. */
+      .pill { background: #3a2c38; color: #f7f1e3; border-radius: 22px; padding: 16px 40px 22px; text-align: center; box-shadow: 0 12px 40px rgba(0,0,0,0.25); }
+      .lead { font-family: "Playfair Display", serif; font-style: italic; font-size: 96px; line-height: 1.05; }
+      .sub { font-weight: 900; font-size: 66px; line-height: 1.1; letter-spacing: -0.02em; background: #f7f1e3; color: #3a2c38; }
+    </style>
+  <div id="root" data-composition-id="t3" data-width="1080" data-height="1920">
+    <div id="t3-card" class="card"><div id="t3-l0" class="pill lead">Would you wear it?</div><div id="t3-l1" class="pill sub">Tell us below.</div></div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#t3-l0", { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 0.04);
+      tl.fromTo("#t3-l1", { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 0.10);
+      window.__timelines["t3"] = tl;
+    })();
+  </script>
+</template>

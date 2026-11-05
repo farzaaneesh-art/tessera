@@ -85,3 +85,20 @@ DM "DUPATTA" to order.
 
 - Save-and-comment bait is the whole point of this format: reply to every "1/2/3" comment.
 - Add a trending sound in the app. Pick one with a clear beat and line the cuts up if you can.
+
+---
+
+# Flip reel — `tessera-flip-reel.mp4` (HyperFrames)
+
+7.2s, 1080×1920, loops (last shot runs straight into the first). Cut from `Tessera_One_Reel.mov` (the sharpest source; frames after 2.5s, past its burned-in text).
+Project: `hf-flip/`. Source ranges: f1 3.60–5.00 · f2 9.0–10.2 (crop 490×871+335+565) · f3 5.40–6.60 · f4 6.60–7.90 · f5 10.2–11.2 (crop 540×960+170+760) · f6 2.55–3.60.
+
+## Caption
+
+Every leaf on this is real 🍃 Would you wear it? Yes or no below 👇
+
+## Pinned comment
+
+Ecoprinted: real leaves and flowers pressed into the fabric and steamed until the colour stays. One piece. DM "KAFTAN" to order.
+
+#ecoprint #naturaldye #botanicalprint #kaftan #slowfashion
