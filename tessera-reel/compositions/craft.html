@@ -26,41 +26,31 @@
 
 
   </style>
-  <div id="root" data-composition-id="craft" data-width="1080" data-height="1920" data-duration="9.0">
+  <div id="root" data-composition-id="craft" data-width="1080" data-height="1920" data-duration="10.0">
     <div class="shot" id="craft-v0-wrap" data-layout-allow-overflow style="z-index:1">
-      <video id="craft-v0" class="clip" src="assets/footage/s3a.mp4" data-start="0.0" data-duration="2.4" data-track-index="0" muted playsinline></video>
+      <video id="craft-v0" class="clip" src="assets/footage/s2a.mp4" data-start="0.0" data-duration="2.65" data-track-index="0" muted playsinline></video>
     </div>
     <div class="shot" id="craft-v1-wrap" data-layout-allow-overflow style="z-index:2">
-      <video id="craft-v1" class="clip" src="assets/footage/s3b.mp4" data-start="2.2" data-duration="2.4" data-track-index="1" muted playsinline></video>
+      <video id="craft-v1" class="clip" src="assets/footage/s3a.mp4" data-start="2.45" data-duration="2.65" data-track-index="1" muted playsinline></video>
     </div>
     <div class="shot" id="craft-v2-wrap" data-layout-allow-overflow style="z-index:3">
-      <video id="craft-v2" class="clip" src="assets/footage/s3c.mp4" data-start="4.4" data-duration="2.4" data-track-index="2" muted playsinline></video>
+      <video id="craft-v2" class="clip" src="assets/footage/s2b.mp4" data-start="4.9" data-duration="2.65" data-track-index="2" muted playsinline></video>
     </div>
     <div class="shot" id="craft-v3-wrap" data-layout-allow-overflow style="z-index:4">
-      <video id="craft-v3" class="clip" src="assets/footage/s3d.mp4" data-start="6.6" data-duration="2.4" data-track-index="3" muted playsinline></video>
+      <video id="craft-v3" class="clip" src="assets/footage/s2c.mp4" data-start="7.35" data-duration="2.65" data-track-index="3" muted playsinline></video>
     </div>
-    <div class="hl clip" id="craft-hl" data-start="0.6" data-duration="8.2" data-track-index="9" style="top:250px; font-size:84px">
-        <span class="line" id="craft-hl-l0">Real botanicals.</span>
-        <span class="line" id="craft-hl-l1"><em>Distinctive impressions.</em></span>
-        <span class="rule" id="craft-hl-rule"></span>
-    </div>
-    <div class="scrim-top" id="craft-scrim-t"></div>
     <div class="scrim-bot" id="craft-scrim-b"></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#craft-v0-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.4, ease: "none"}, 0.0);
+    tl.fromTo("#craft-v0-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.65, ease: "none"}, 0.0);
     tl.fromTo("#craft-v0-wrap", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power1.inOut"}, 0);
-    tl.fromTo("#craft-v1-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.4, ease: "none"}, 2.2);
-    tl.fromTo("#craft-v1-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 2.2);
-    tl.fromTo("#craft-v2-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.4, ease: "none"}, 4.4);
-    tl.fromTo("#craft-v2-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 4.4);
-    tl.fromTo("#craft-v3-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.4, ease: "none"}, 6.6);
-    tl.fromTo("#craft-v3-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 6.6);
-    tl.fromTo("#craft-hl-l0", {opacity: 0, filter: "blur(8px)", y: 10}, {opacity: 1, filter: "blur(0px)", y: 0, duration: 0.9, ease: "power3.out"}, 0.65);
-    tl.fromTo("#craft-hl-l1", {opacity: 0, filter: "blur(8px)", y: 10}, {opacity: 1, filter: "blur(0px)", y: 0, duration: 0.9, ease: "power3.out"}, 5.65);
-    tl.fromTo("#craft-hl-rule", {scaleX: 0, opacity: 0}, {scaleX: 1, opacity: 0.9, duration: 0.8, ease: "power2.out"}, 1.0);
-    tl.to("#craft-hl", {opacity: 0, filter: "blur(6px)", duration: 0.35, ease: "power2.in"}, 8.4);
+    tl.fromTo("#craft-v1-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.65, ease: "none"}, 2.45);
+    tl.fromTo("#craft-v1-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 2.45);
+    tl.fromTo("#craft-v2-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.65, ease: "none"}, 4.9);
+    tl.fromTo("#craft-v2-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 4.9);
+    tl.fromTo("#craft-v3-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.65, ease: "none"}, 7.35);
+    tl.fromTo("#craft-v3-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 7.35);
     window.__timelines["craft"] = tl;
   </script>
 </template>

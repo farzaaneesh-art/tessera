@@ -1,0 +1,52 @@
+<template>
+  <style>
+
+@font-face { font-family: 'Cormorant Garamond'; font-weight: 400; font-style: normal; src: url('assets/fonts/cormorant-garamond-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-weight: 400; font-style: italic; src: url('assets/fonts/cormorant-garamond-latin-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-weight: 500; font-style: normal; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-weight: 300; font-style: italic; src: url('assets/fonts/cormorant-garamond-latin-300-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-weight: 300; font-style: normal; src: url('assets/fonts/jost-latin-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-weight: 400; font-style: normal; src: url('assets/fonts/jost-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-weight: 500; font-style: normal; src: url('assets/fonts/jost-latin-500-normal.woff2') format('woff2'); }
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+.sty-ground { position: absolute; inset: 0; background: radial-gradient(ellipse 75% 55% at 50% 45%, #FBF7F0 0%, #EFE6D6 100%); }
+#sty-label { position: absolute; left: 0; width: 1080px; top: 186px; text-align: center; font-family: 'Jost', sans-serif;
+  font-weight: 400; font-size: 28px; letter-spacing: 0.32em; text-transform: uppercase; color: #6E6C3F; }
+#sty-plate { position: absolute; left: 150px; top: 240px; width: 780px; height: 1040px; overflow: hidden;
+  box-shadow: 0 18px 50px rgba(61,45,33,0.18); background: #EFE6D6; }
+.plate-in { position: absolute; inset: 0; }
+.plate-in img { position: absolute; left: 0; top: 0; width: 780px; height: 1040px; object-fit: cover; }
+#sty-note { position: absolute; left: 0; width: 1080px; top: 1290px; text-align: center; font-family: 'Cormorant Garamond', serif;
+  font-style: italic; font-size: 32px; color: #3D2D21; }
+  </style>
+  <div id="root" data-composition-id="styling" data-width="1080" data-height="1920" data-duration="6.0">
+    <div class="sty-ground" id="sty-ground"></div>
+    <div id="sty-label">Styling inspiration</div>
+    <div id="sty-plate" data-layout-allow-overflow>
+      <div class="plate-in" id="sty-w0" data-layout-allow-overflow style="z-index:1">
+        <img id="sty-i0" class="clip" src="assets/styling/ai-styling-brown.png" data-start="0.0" data-duration="2.4" data-track-index="0" alt="AI-generated styling visual">
+      </div>
+      <div class="plate-in" id="sty-w1" data-layout-allow-overflow style="z-index:2">
+        <img id="sty-i1" class="clip" src="assets/styling/ai-styling-lilac-marigold.png" data-start="2.0" data-duration="2.2" data-track-index="1" alt="AI-generated styling visual">
+      </div>
+      <div class="plate-in" id="sty-w2" data-layout-allow-overflow style="z-index:3">
+        <img id="sty-i2" class="clip" src="assets/styling/ai-styling-yellow.png" data-start="3.8" data-duration="2.2" data-track-index="2" alt="AI-generated styling visual">
+      </div>
+    </div>
+    <div id="sty-note">AI-generated styling visual</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#sty-ground", {opacity: 0}, {opacity: 1, duration: 0.5, ease: "power1.inOut"}, 0);
+    tl.fromTo("#sty-plate", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.8, ease: "power3.out"}, 0.15);
+    tl.fromTo("#sty-label", {opacity: 0}, {opacity: 1, duration: 0.6, ease: "power2.out"}, 0.35);
+    tl.fromTo("#sty-note", {opacity: 0}, {opacity: 1, duration: 0.6, ease: "power2.out"}, 0.35);
+    tl.fromTo("#sty-w0", {scale: 1.0, y: 0}, {scale: 1.05, y: -10, duration: 2.4, ease: "none"}, 0.0);
+    tl.fromTo("#sty-w1", {scale: 1.05, y: 0}, {scale: 1.0, y: 10, duration: 2.2, ease: "none"}, 2.0);
+    tl.fromTo("#sty-w1", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power1.inOut"}, 2.0);
+    tl.fromTo("#sty-w2", {scale: 1.0, y: 0}, {scale: 1.05, y: -10, duration: 2.2, ease: "none"}, 3.8);
+    tl.fromTo("#sty-w2", {opacity: 0}, {opacity: 1, duration: 0.45, ease: "power1.inOut"}, 3.8);
+    window.__timelines["styling"] = tl;
+  </script>
+</template>

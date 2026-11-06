@@ -4,3 +4,4 @@ tessera-reel/.hyperframes/
 tessera-reel/assets/audio/*_raw.wav
 # full-quality master render (81 MB; re-render with `npx hyperframes render`)
 deliverables/TESSERA_Ecoprint_Reel.mp4
+deliverables/*_master.mp4

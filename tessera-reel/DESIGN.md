@@ -33,18 +33,21 @@ Footage is never re-coloured. The only thing laid over it is a warm-brown gradie
 - Exits are ~half the entrance: blur-out 0.35 s, `power2.in`.
 - Landed titles stay still. Movement lives in the footage: slow push 1.00 → 1.05 per shot.
 - Transitions (only three kinds):
-  1. **Fabric wipe** — soft-edged vertical mask rising like cloth being lifted (scene 1→2, 4→5).
+  1. **Fabric wipe** — soft-edged vertical mask (v1 only; v2 uses dissolves so no bare ground shows).
   2. **Organic dissolve** — 0.3–0.5 s crossfade between shots.
   3. **Dip to ivory** — final product shot melts into the brand card.
 - No zoom > 1.4× on 512 px-wide sources; no flashes, shakes, stickers, particles.
 
-## Sound
-- Warm female narration (Kokoro `af_heart`, 0.9× speed), placed sentence by sentence with
-  natural pauses. Narration is the clock: headlines land on the words that say them.
-- Soft piano + pad bed at 70 BPM in D major, ducked ~5 dB under the voice, building
-  from pad only → single notes → gentle eighth notes in the desire section → one resolving chord.
+## Sound (v2)
+- Narration: Kokoro `bf_emma` (British female) at 0.84× speed, chosen because it measured the steadiest
+  pitch of five local voices. Each line is then pitch-smoothed in Praat: about 1 semitone lower and
+  a 20 % narrower pitch range, so it sounds calmer and more even. Lines are placed with long pauses.
+- Soft piano + pad bed at 64 BPM in D major, ducked under the voice; it comes forward only in the
+  wordless styling section and resolves on one chord under the brand card.
 
-## Product accuracy
-Every frame of garment is original Tessera footage: cropped, scaled (lanczos) and lightly
-sharpened only. No generated garments, no recolouring, no redrawn prints. AI-generated
-model images supplied with the brief are **not** used in this film.
+## Product accuracy (v2)
+- Real Tessera footage carries the film: hook, craft close-ups, product movement and the rack.
+- Three AI-generated styling images (brown, lilac-marigold, yellow) appear only in the 14.2–20.2 s
+  "Styling inspiration" section. They are shown whole, unedited, as framed plates on ivory, so they
+  read as illustrations, not footage. Each carries the label "AI-generated styling visual".
+- No narration or caption about real fabric or real prints plays over the AI images.

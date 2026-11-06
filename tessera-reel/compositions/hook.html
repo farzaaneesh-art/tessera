@@ -43,11 +43,10 @@
       <video id="hook-v1" class="clip" src="assets/footage/h2.mp4" data-start="2.6" data-duration="1.933" data-track-index="1" muted playsinline></video>
     </div>
     <div class="hook-vig" id="hook-vig"></div>
-    <div class="hook-txt clip" id="hook-a" data-start="0" data-duration="2.62" data-track-index="9">
+    <div class="hook-txt clip" id="hook-a" data-start="0" data-duration="1.95" data-track-index="9">
       <span class="line" id="hook-a1">Flowers fade.</span>
-      <span class="line" id="hook-a2"><em>Leaves fall.</em></span>
     </div>
-    <div class="hook-txt clip" id="hook-q" data-start="2.62" data-duration="1.98" data-track-index="10">
+    <div class="hook-txt clip" id="hook-q" data-start="1.95" data-duration="2.65" data-track-index="10">
       <span class="line" id="hook-q1">But what if</span>
       <span class="line" id="hook-q2">their beauty</span>
       <span class="line" id="hook-q3"><em>could stay?</em></span>
@@ -58,11 +57,10 @@
     tl.fromTo("#hook-v0-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.8, ease: "none"}, 0.0);
     tl.fromTo("#hook-v1-wrap", {scale: 1.0}, {scale: 1.05, duration: 1.933, ease: "none"}, 2.6);
     tl.fromTo("#hook-v1-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 2.6);
-    tl.fromTo("#hook-a2", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.8, ease: "power3.out"}, 0.85);
-    tl.to("#hook-a", {opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power2.in"}, 2.3);
-    tl.fromTo("#hook-q1", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out"}, 2.65);
-    tl.fromTo("#hook-q2", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out"}, 2.8);
-    tl.fromTo("#hook-q3", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.8, ease: "power3.out"}, 2.98);
+    tl.to("#hook-a", {opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power2.in"}, 1.62);
+    tl.fromTo("#hook-q1", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out"}, 2.0);
+    tl.fromTo("#hook-q2", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out"}, 2.16);
+    tl.fromTo("#hook-q3", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.8, ease: "power3.out"}, 2.36);
     tl.to("#hook-q", {opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power2.in"}, 4.25);
     window.__timelines["hook"] = tl;
   </script>

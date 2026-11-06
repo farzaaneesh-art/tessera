@@ -20,19 +20,21 @@
 #outro-rule { width: 96px; height: 1px; background: #6E6C3F; margin: 56px auto 0; }
 #outro-craft { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.30em; text-transform: uppercase;
   margin-top: 52px; color: #6E6C3F; }
-#outro-disc { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 46px; margin-top: 150px; color: #3D2D21; }
-#outro-cta { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.12em; margin-top: 26px; color: #5A4434; }
+#outro-disc { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 46px; margin-top: 120px; color: #3D2D21; }
+#outro-ig { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: 0.08em; margin-top: 30px; color: #3D2D21; }
+#outro-cta { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.12em; margin-top: 16px; color: #5A4434; }
   </style>
-  <div id="root" data-composition-id="outro" data-width="1080" data-height="1920" data-duration="4.7">
+  <div id="root" data-composition-id="outro" data-width="1080" data-height="1920" data-duration="5.6">
     <div class="ground" id="outro-ground"></div>
     <div class="grain" id="outro-glow"></div>
     <div class="card" id="outro-card">
       <div id="outro-brand"><span id="ob0">T</span><span id="ob1">E</span><span id="ob2">S</span><span id="ob3">S</span><span id="ob4">E</span><span id="ob5">R</span><span id="ob6">A</span></div>
       <div id="outro-tag">Naturally Yours.</div>
       <div id="outro-rule"></div>
-      <div id="outro-craft">Nature meets craftsmanship</div>
-      <div id="outro-disc">Discover our botanical collection.</div>
-      <div id="outro-cta">UAE &nbsp;|&nbsp; Enquiries via DM / WhatsApp</div>
+      <div id="outro-craft">Where Nature Meets Craft</div>
+      <div id="outro-disc">Discover our collection.</div>
+      <div id="outro-ig">Instagram &nbsp;@weartessera</div>
+      <div id="outro-cta">Enquiries via DM / WhatsApp</div>
     </div>
   </div>
   <script>
@@ -41,11 +43,12 @@
     for (let i = 0; i < 7; i++) {
       tl.fromTo("#ob" + i, {opacity: 0, filter: "blur(8px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.9, ease: "power3.out"}, 0.12 + i * 0.08);
     }
-    tl.fromTo("#outro-tag", {opacity: 0, filter: "blur(8px)", y: 8}, {opacity: 1, filter: "blur(0px)", y: 0, duration: 1.0, ease: "power3.out"}, 1.55);
-    tl.fromTo("#outro-rule", {scaleX: 0}, {scaleX: 1, duration: 0.9, ease: "power2.out"}, 1.85);
-    tl.fromTo("#outro-craft", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "power2.out"}, 1.95);
-    tl.fromTo("#outro-disc", {opacity: 0, y: 8}, {opacity: 1, y: 0, duration: 0.9, ease: "power3.out"}, 2.15);
-    tl.fromTo("#outro-cta", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "power2.out"}, 2.35);
+    tl.fromTo("#outro-tag", {opacity: 0, filter: "blur(8px)", y: 8}, {opacity: 1, filter: "blur(0px)", y: 0, duration: 1.0, ease: "power3.out"}, 1.9);
+    tl.fromTo("#outro-rule", {scaleX: 0}, {scaleX: 1, duration: 0.9, ease: "power2.out"}, 2.2);
+    tl.fromTo("#outro-craft", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "power2.out"}, 2.3);
+    tl.fromTo("#outro-disc", {opacity: 0, y: 8}, {opacity: 1, y: 0, duration: 0.9, ease: "power3.out"}, 2.55);
+    tl.fromTo("#outro-ig", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "power2.out"}, 2.75);
+    tl.fromTo("#outro-cta", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "power2.out"}, 2.9);
     window.__timelines["outro"] = tl;
   </script>
 </template>

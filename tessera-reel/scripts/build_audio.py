@@ -1,4 +1,4 @@
-"""Builds the voiceover track and a soft ambient music bed for the Tessera reel.
+"""Builds the (v2, 31 s) voiceover track and a soft ambient music bed for the Tessera reel.
 
 - assets/audio/voiceover.wav : the narration sentences placed on the film's clock
 - assets/audio/music_bed.wav : a quiet procedural piano/pad bed, ducked under the voice
@@ -11,18 +11,20 @@ import numpy as np
 import soundfile as sf
 
 SR = 48000
-LEN = 40.0
+LEN = 31.6
 N = int(SR * LEN)
 
 # ---------------------------------------------------------------- voiceover
 # (file, start second on the film clock)
 VO = [
-    ("v01", 0.35), ("v02", 1.55), ("v03", 2.80),
-    ("v04", 4.70),
-    ("v05", 11.30), ("v06", 16.60),
-    ("v07", 20.30), ("v08", 22.70), ("v09", 27.00),
-    ("v10", 30.10),
-    ("v11", 36.10), ("v12", 37.25),
+    ("n01", 0.40),            # Flowers fade.
+    ("n02", 3.30),            # But their beauty doesn't have to.
+    ("n03", 5.30),            # In every leaf, every petal...
+    ("n04", 8.90),            # Through botanical printing...
+    ("n05", 20.50),           # Each impression is different.
+    ("n06", 23.20),           # Each piece tells its own story.
+    ("n07", 26.60),           # Tessera.
+    ("n08", 28.10),           # Naturally Yours.
 ]
 
 def load_resampled(path):
@@ -38,11 +40,11 @@ def load_resampled(path):
 vo = np.zeros(N)
 timing = []
 for name, start in VO:
-    x = load_resampled(f"assets/vo/parts/{name}.wav")
+    x = load_resampled(f"assets/vo2/parts/{name}.wav")
     i = int(start * SR)
     vo[i:i + len(x)] += x[: N - i]
     timing.append({"id": name, "start": start, "end": round(start + len(x) / SR, 3)})
-json.dump(timing, open("assets/vo/timing.json", "w"), indent=2)
+json.dump(timing, open("assets/vo2/timing.json", "w"), indent=2)
 sf.write("assets/audio/voiceover_raw.wav", vo, SR, subtype="PCM_24")
 
 # ---------------------------------------------------------------- music bed
@@ -52,7 +54,7 @@ t = np.arange(N) / SR
 def midi(m):
     return 440.0 * 2 ** ((m - 69) / 12)
 
-BPM = 70
+BPM = 64
 BEAT = 60 / BPM
 BAR = 4 * BEAT
 # D major colour: Dmaj9, Bm7(11), Gmaj7(9), Asus4 -> A   (2 bars each)
@@ -66,7 +68,7 @@ CHORD_LEN = 2 * BAR
 
 def env_adsr(n, a, r):
     e = np.ones(n)
-    na, nr = int(a * SR), int(r * SR)
+    na, nr = min(int(a * SR), n // 2), min(int(r * SR), n // 2)
     e[:na] = np.linspace(0, 1, na) ** 2
     if nr:
         e[-nr:] *= np.linspace(1, 0, nr) ** 2
@@ -103,15 +105,15 @@ bass = np.zeros(N)
 beat_i = 0
 while True:
     bt = beat_i * BEAT
-    if bt >= 38.0:
+    if bt >= 30.0:
         break
     ch = CHORDS[int(bt // CHORD_LEN) % 4]
     upper = [m + 12 for m in ch[2:]]
     # sparse in the opening, one note per beat from the idea, eighths in the desire section
     play = []
-    if bt >= 4.2:
+    if bt >= 4.4 and bt < 26.0:
         play.append((bt, upper[beat_i % len(upper)], 0.9 if beat_i % 4 == 0 else 0.6))
-    if 19.6 <= bt < 35.0:
+    if 14.2 <= bt < 25.6:
         play.append((bt + BEAT / 2, upper[(beat_i * 3 + 2) % len(upper)], 0.35))
     for (st, m, vel) in play:
         i0 = int(st * SR)
@@ -119,7 +121,7 @@ while True:
         if n > 0:
             keys[i0:i0 + n] += piano_note(midi(m), n, vel * (0.85 + 0.15 * rng.random()))
     # bass on each chord change once the film opens up
-    if beat_i % 8 == 0 and 11.0 <= bt < 35.0:
+    if beat_i % 8 == 0 and 8.0 <= bt < 26.0:
         i0 = int(bt * SR)
         n = min(int(CHORD_LEN * SR), N - i0)
         tt = np.arange(n) / SR
@@ -129,12 +131,12 @@ while True:
     beat_i += 1
 
 # final resolving chord under the brand card
-i0 = int(35.4 * SR)
+i0 = int(26.1 * SR)
 for m in [62, 69, 74, 78, 81]:
     n = N - i0
     keys[i0:] += piano_note(midi(m), n, 0.45)
 
-dry = pad * 0.9 + keys * 0.11 + bass
+dry = pad * 0.9 + keys * 0.09 + bass
 
 # simple stereo convolution reverb (seeded noise IR)
 ir_len = int(2.8 * SR)
