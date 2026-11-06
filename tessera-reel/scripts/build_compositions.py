@@ -25,15 +25,15 @@ SCENES = [
     dict(id="hook", start=0.0, dur=4.6, entry=None,
          shots=[("h1", 0.0, 2.8), ("h2", 2.6, 1.933)],
          heads=[]),  # hook text is hand-built below (centred, larger)
-    dict(id="craft", start=4.3, dur=10.0, entry="dissolve",
-         shots=[("s2a", 0.0, 2.65), ("s3a", 2.45, 2.65), ("s2b", 4.9, 2.65), ("s2c", 7.35, 2.65)],
+    dict(id="craft", start=4.3, dur=10.35, entry="dissolve",
+         shots=[("s2a", 0.0, 2.65), ("s3a", 2.45, 2.65), ("s2b", 4.9, 2.65), ("s2c", 7.35, 3.0)],
          heads=[]),
-    # styling (AI-generated visuals) is hand-built in styling_file(), 14.2 -> 20.2
+    # styling (AI-generated visuals) is hand-built in styling_file(), 14.15 -> 20.6
     dict(id="beauty", start=20.0, dur=6.2, entry="dissolve",
          shots=[("s4a", 0.0, 2.4), ("s4c", 2.2, 2.4), ("s5b", 4.2, 2.0)],
          heads=[]),
 ]
-STYLING = dict(start=14.2, dur=6.0)
+STYLING = dict(start=14.15, dur=6.45)
 OUTRO = dict(start=26.0, dur=5.6)
 TOTAL = 31.6
 
@@ -83,7 +83,8 @@ def scene_file(sc):
             if sc["entry"] == "wipe":
                 js.append(f'tl.fromTo("{w}", {{"--wipe": "-25%"}}, {{"--wipe": "125%", duration: 0.9, ease: "power2.inOut"}}, 0);')
             elif sc["entry"] == "dissolve":
-                js.append(f'tl.fromTo("{w}", {{opacity: 0}}, {{opacity: 1, duration: 0.45, ease: "power1.inOut"}}, 0);')
+                dis = 0.6 if sid == "beauty" else 0.45
+                js.append(f'tl.fromTo("{w}", {{opacity: 0}}, {{opacity: 1, duration: {dis}, ease: "power1.inOut"}}, 0);')
         else:
             js.append(f'tl.fromTo("{w}", {{opacity: 0}}, {{opacity: 1, duration: 0.4, ease: "power1.inOut"}}, {st});')
     wipe_css = ""
@@ -168,19 +169,21 @@ def hook_file():
 
 
 STYLING_IMAGES = [  # (file, local start, duration, push from, push to, y drift)
-    ("ai-styling-brown.png", 0.0, 2.4, 1.0, 1.05, -10),
-    ("ai-styling-lilac-marigold.png", 2.0, 2.2, 1.05, 1.0, 10),
-    ("ai-styling-yellow.png", 3.8, 2.2, 1.0, 1.05, -10),
+    ("brown", 0.0, 2.6, 1.0, 1.04, -12),
+    ("lilac-marigold", 2.0, 2.6, 1.04, 1.0, 12),
+    ("yellow", 4.0, 2.45, 1.0, 1.04, -12),
 ]
 
 
 def styling_file():
     imgs, js = [], []
-    for i, (f, st, dur, s0, s1, dy) in enumerate(STYLING_IMAGES):
-        imgs.append(f'      <div class="plate-in" id="sty-w{i}" data-layout-allow-overflow style="z-index:{i + 1}">\n'
-                    f'        <img id="sty-i{i}" class="clip" src="assets/styling/{f}" data-start="{st}" data-duration="{dur}" '
-                    f'data-track-index="{i}" alt="AI-generated styling visual">\n      </div>')
-        js.append(f'tl.fromTo("#sty-w{i}", {{scale: {s0}, y: 0}}, {{scale: {s1}, y: {dy}, duration: {dur}, ease: "none"}}, {st});')
+    for i, (n, st, dur, s0, s1, dy) in enumerate(STYLING_IMAGES):
+        imgs.append(f'    <div class="sty-shot" id="sty-w{i}" data-layout-allow-overflow style="z-index:{i + 1}">\n'
+                    f'      <img id="sty-b{i}" class="clip sty-bg" src="assets/styling/bg-{n}.jpg" data-start="{st}" data-duration="{dur}" data-track-index="{i}" alt="">\n'
+                    f'      <div class="sty-fg" id="sty-f{i}" data-layout-allow-overflow>\n'
+                    f'        <img id="sty-i{i}" class="clip" src="assets/styling/ai-styling-{n}.png" data-start="{st}" data-duration="{dur}" '
+                    f'data-track-index="{i + 3}" alt="AI-generated styling visual">\n      </div>\n    </div>')
+        js.append(f'tl.fromTo("#sty-f{i}", {{scale: {s0}, y: 0}}, {{scale: {s1}, y: {dy}, duration: {dur}, ease: "none"}}, {st});')
         if i:
             js.append(f'tl.fromTo("#sty-w{i}", {{opacity: 0}}, {{opacity: 1, duration: 0.45, ease: "power1.inOut"}}, {st});')
     body = "\n".join(imgs)
@@ -189,30 +192,27 @@ def styling_file():
   <style>
 {FONT_FACES}
 #root {{ position: absolute; inset: 0; overflow: hidden; }}
-.sty-ground {{ position: absolute; inset: 0; background: radial-gradient(ellipse 75% 55% at 50% 45%, #FBF7F0 0%, #EFE6D6 100%); }}
-#sty-label {{ position: absolute; left: 0; width: 1080px; top: 186px; text-align: center; font-family: 'Jost', sans-serif;
-  font-weight: 400; font-size: 28px; letter-spacing: 0.32em; text-transform: uppercase; color: #6E6C3F; }}
-#sty-plate {{ position: absolute; left: 150px; top: 240px; width: 780px; height: 1040px; overflow: hidden;
-  box-shadow: 0 18px 50px rgba(61,45,33,0.18); background: #EFE6D6; }}
-.plate-in {{ position: absolute; inset: 0; }}
-.plate-in img {{ position: absolute; left: 0; top: 0; width: 780px; height: 1040px; object-fit: cover; }}
-#sty-note {{ position: absolute; left: 0; width: 1080px; top: 1290px; text-align: center; font-family: 'Cormorant Garamond', serif;
-  font-style: italic; font-size: 32px; color: #3D2D21; }}
+#sty-all {{ position: absolute; inset: 0; }}
+.sty-shot {{ position: absolute; inset: 0; }}
+.sty-bg {{ position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }}
+.sty-fg {{ position: absolute; left: 0; top: 240px; width: 1080px; height: 1440px;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 70px, #000 1370px, transparent 1440px);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 70px, #000 1370px, transparent 1440px); }}
+.sty-fg img {{ position: absolute; left: 0; top: 0; width: 1080px; height: 1440px; object-fit: contain; }}
+#sty-note {{ position: absolute; left: 0; width: 1080px; top: 176px; text-align: center; z-index: 10;
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 38px; color: #FAF5EC;
+  letter-spacing: 0.02em; text-shadow: 0 1px 3px rgba(25,16,10,0.55), 0 2px 18px rgba(25,16,10,0.7); }}
   </style>
   <div id="root" data-composition-id="styling" data-width="{W}" data-height="{H}" data-duration="{STYLING['dur']}">
-    <div class="sty-ground" id="sty-ground"></div>
-    <div id="sty-label">Styling inspiration</div>
-    <div id="sty-plate" data-layout-allow-overflow>
+    <div id="sty-all">
 {body}
     </div>
     <div id="sty-note">AI-generated styling visual</div>
   </div>
   <script>
     const tl = gsap.timeline({{ paused: true }});
-    tl.fromTo("#sty-ground", {{opacity: 0}}, {{opacity: 1, duration: 0.5, ease: "power1.inOut"}}, 0);
-    tl.fromTo("#sty-plate", {{opacity: 0, y: 14}}, {{opacity: 1, y: 0, duration: 0.8, ease: "power3.out"}}, 0.15);
-    tl.fromTo("#sty-label", {{opacity: 0}}, {{opacity: 1, duration: 0.6, ease: "power2.out"}}, 0.35);
-    tl.fromTo("#sty-note", {{opacity: 0}}, {{opacity: 1, duration: 0.6, ease: "power2.out"}}, 0.35);
+    tl.fromTo("#sty-all", {{opacity: 0}}, {{opacity: 1, duration: 0.5, ease: "power1.inOut"}}, 0);
+    tl.fromTo("#sty-note", {{opacity: 0}}, {{opacity: 1, duration: 0.5, ease: "power2.out"}}, 0.3);
     {jsb}
     window.__timelines["styling"] = tl;
   </script>
@@ -235,9 +235,9 @@ def outro_file():
 #outro-rule {{ width: 96px; height: 1px; background: #6E6C3F; margin: 56px auto 0; }}
 #outro-craft {{ font-family: 'Jost', sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.30em; text-transform: uppercase;
   margin-top: 52px; color: #6E6C3F; }}
-#outro-disc {{ font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 46px; margin-top: 120px; color: #3D2D21; }}
-#outro-ig {{ font-family: 'Jost', sans-serif; font-weight: 500; font-size: 30px; letter-spacing: 0.08em; margin-top: 30px; color: #3D2D21; }}
-#outro-cta {{ font-family: 'Jost', sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.12em; margin-top: 16px; color: #5A4434; }}
+#outro-disc {{ font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 46px; margin-top: 100px; color: #3D2D21; }}
+#outro-ig {{ font-family: 'Jost', sans-serif; font-weight: 500; font-size: 40px; letter-spacing: 0.04em; margin-top: 34px; color: #2E2118; }}
+#outro-cta {{ font-family: 'Jost', sans-serif; font-weight: 500; font-size: 36px; letter-spacing: 0.04em; margin-top: 18px; color: #2E2118; }}
   </style>
   <div id="root" data-composition-id="outro" data-width="{W}" data-height="{H}" data-duration="{OUTRO['dur']}">
     <div class="ground" id="outro-ground"></div>

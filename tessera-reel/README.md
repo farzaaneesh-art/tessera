@@ -20,3 +20,11 @@ Note: re-running `build_compositions.py` overwrites hand edits to the HTML.
 - `assets/vo/`: v1 narration, kept for reference.
 - `assets/audio/voiceover.wav` (−16.5 LUFS), `music_bed.wav` (procedural, about −27 LUFS, ducked under the voice).
 - `assets/fonts/`: Cormorant Garamond + Jost (OFL).
+
+## v3 (final) notes
+- AI styling images fill the frame (1080 × 1440, full width) over a blurred extension of the same image, with
+  "AI-generated styling visual" at the top. Images themselves are unaltered.
+- Footage re-cut from the original uploads at near-lossless quality (CRF 10). The 1440×1920 macro clips and the
+  1080×1920 rack clip are used 1:1 with no scaling. The five hanger clips only exist as 512×910 uploads; they are
+  scaled once (lanczos) with at most 1.12× zoom and very light sharpening.
+- Render: `npx hyperframes render --fps 30 --quality high --crf 14 --video-frame-format png`, then `-c copy` faststart remux.
