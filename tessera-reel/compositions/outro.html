@@ -1,28 +1,27 @@
 <template>
   <style>
 
-@font-face { font-family: 'Cormorant Garamond'; font-weight: 400; font-style: normal; src: url('assets/fonts/cormorant-garamond-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-weight: 400; font-style: italic; src: url('assets/fonts/cormorant-garamond-latin-400-italic.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-weight: 500; font-style: normal; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-weight: 300; font-style: italic; src: url('assets/fonts/cormorant-garamond-latin-300-italic.woff2') format('woff2'); }
-@font-face { font-family: 'Jost'; font-weight: 300; font-style: normal; src: url('assets/fonts/jost-latin-300-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Jost'; font-weight: 400; font-style: normal; src: url('assets/fonts/jost-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Jost'; font-weight: 500; font-style: normal; src: url('assets/fonts/jost-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Bodoni Moda'; font-weight: 400; src: url('assets/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Bodoni Moda'; font-weight: 500; src: url('assets/fonts/bodoni-moda-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Great Vibes'; font-weight: 400; src: url('assets/fonts/great-vibes-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Josefin Sans'; font-weight: 400; src: url('assets/fonts/josefin-sans-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Josefin Sans'; font-weight: 500; src: url('assets/fonts/josefin-sans-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Josefin Sans'; font-weight: 600; src: url('assets/fonts/josefin-sans-latin-600-normal.woff2') format('woff2'); }
 
 #root { position: absolute; inset: 0; overflow: hidden; }
 .ground { position: absolute; inset: 0; background: #F4EEE3; }
 .grain { position: absolute; inset: 0; background: radial-gradient(ellipse 70% 55% at 50% 45%, rgba(255,252,245,0.9) 0%, rgba(231,220,200,0.55) 100%); }
 .card { position: absolute; left: 90px; width: 900px; top: 470px; text-align: center; color: #3D2D21; }
-#outro-brand { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 124px; letter-spacing: 0.30em;
-  margin-right: -0.30em; line-height: 1; }
+#outro-brand { font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 118px; letter-spacing: 0.26em;
+  margin-right: -0.26em; line-height: 1; }
 #outro-brand span { display: inline-block; }
-#outro-tag { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; font-size: 60px; margin-top: 34px; color: #5A4434; }
+#outro-tag { font-family: 'Great Vibes', cursive; font-weight: 400; font-size: 88px; margin-top: 18px; line-height: 1.1; color: #5A4434; }
 #outro-rule { width: 96px; height: 1px; background: #6E6C3F; margin: 56px auto 0; }
-#outro-craft { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.30em; text-transform: uppercase;
+#outro-craft { font-family: 'Josefin Sans', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.30em; text-transform: uppercase;
   margin-top: 52px; color: #6E6C3F; }
-#outro-disc { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 46px; margin-top: 100px; color: #3D2D21; }
-#outro-ig { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 40px; letter-spacing: 0.04em; margin-top: 34px; color: #2E2118; }
-#outro-cta { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 36px; letter-spacing: 0.04em; margin-top: 18px; color: #2E2118; }
+#outro-disc { font-family: 'Bodoni Moda', serif; font-size: 44px; margin-top: 92px; color: #3D2D21; }
+#outro-ig { font-family: 'Josefin Sans', sans-serif; font-weight: 600; font-size: 40px; letter-spacing: 0.04em; margin-top: 34px; color: #2E2118; }
+#outro-cta { font-family: 'Josefin Sans', sans-serif; font-weight: 600; font-size: 36px; letter-spacing: 0.04em; margin-top: 18px; color: #2E2118; }
   </style>
   <div id="root" data-composition-id="outro" data-width="1080" data-height="1920" data-duration="5.6">
     <div class="ground" id="outro-ground"></div>

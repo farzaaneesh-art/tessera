@@ -23,8 +23,8 @@ Footage is never re-coloured. The only thing laid over it is a warm-brown gradie
 (max 55 % opacity) behind type, so product colours stay true.
 
 ## Type
-- Display: **Cormorant Garamond** 400 / 500, italic for the emotional word. Headlines 84–104 px.
-- Support: **Jost** 300 / 400. Captions 40 px, small caps / labels 22–26 px tracked 0.28–0.34 em.
+- Display: **Bodoni Moda** 400/500 (headlines, TESSERA). Script: **Great Vibes** (accent words, "Naturally Yours."). Headlines 88–118 px.
+- Support: **Josefin Sans** 500/600. Captions 42 px; labels, disclosure and CTA 28–40 px.
 - Max ~5 words per headline line. Captions 3–6 words per group.
 - Files in `assets/fonts/` (OFL licences included).
 

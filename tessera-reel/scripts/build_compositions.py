@@ -9,13 +9,12 @@ import os
 W, H = 1080, 1920
 
 FONT_FACES = """
-@font-face { font-family: 'Cormorant Garamond'; font-weight: 400; font-style: normal; src: url('assets/fonts/cormorant-garamond-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-weight: 400; font-style: italic; src: url('assets/fonts/cormorant-garamond-latin-400-italic.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-weight: 500; font-style: normal; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-weight: 300; font-style: italic; src: url('assets/fonts/cormorant-garamond-latin-300-italic.woff2') format('woff2'); }
-@font-face { font-family: 'Jost'; font-weight: 300; font-style: normal; src: url('assets/fonts/jost-latin-300-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Jost'; font-weight: 400; font-style: normal; src: url('assets/fonts/jost-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Jost'; font-weight: 500; font-style: normal; src: url('assets/fonts/jost-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Bodoni Moda'; font-weight: 400; src: url('assets/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Bodoni Moda'; font-weight: 500; src: url('assets/fonts/bodoni-moda-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Great Vibes'; font-weight: 400; src: url('assets/fonts/great-vibes-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Josefin Sans'; font-weight: 400; src: url('assets/fonts/josefin-sans-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Josefin Sans'; font-weight: 500; src: url('assets/fonts/josefin-sans-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Josefin Sans'; font-weight: 600; src: url('assets/fonts/josefin-sans-latin-600-normal.woff2') format('woff2'); }
 """
 
 # Scenes: id, global start, duration, entry ("wipe" | "dissolve"), shots, headline blocks
@@ -55,10 +54,10 @@ BASE_CSS = """
 .scrim-bot { position: absolute; left: 0; top: 1000px; width: 1080px; height: 920px; z-index: 50;
   background: linear-gradient(to top, rgba(45,32,23,0.70) 0%, rgba(45,32,23,0.52) 45%, rgba(45,32,23,0) 100%); }
 .hl { position: absolute; left: 90px; width: 900px; z-index: 60; text-align: center;
-  font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F4EEE3; line-height: 1.08;
+  font-family: 'Bodoni Moda', serif; font-weight: 400; color: #F4EEE3; line-height: 1.08;
   letter-spacing: -0.005em; text-shadow: 0 2px 24px rgba(30,20,12,0.35); }
 .hl .line { display: block; }
-.hl em { font-style: italic; color: #EFE2C6; }
+.hl em { font-family: 'Great Vibes', cursive; font-style: normal; font-size: 1.3em; color: #EFE2C6; }
 .rule { display: block; width: 72px; height: 1px; margin: 34px auto 0; background: #C9C3A8; }
 """
 
@@ -133,11 +132,11 @@ def scene_file(sc):
 
 HOOK_EXTRA_CSS = """
 .hook-txt { position: absolute; left: 90px; width: 900px; top: 700px; z-index: 60; text-align: center;
-  font-family: 'Cormorant Garamond', serif; color: #F7F1E6; font-size: 108px; line-height: 1.04;
+  font-family: 'Bodoni Moda', serif; color: #F7F1E6; font-size: 96px; line-height: 1.1;
   text-shadow: 0 2px 30px rgba(30,20,12,0.45); }
 .hook-txt .line { display: block; }
-.hook-txt em { font-style: italic; }
-#hook-q { top: 690px; font-size: 96px; }
+.hook-txt em { font-family: 'Great Vibes', cursive; font-style: normal; font-size: 1.32em; line-height: 1.0; }
+#hook-q { top: 660px; font-size: 88px; }
 .hook-vig { position: absolute; inset: 0; z-index: 50;
   background: radial-gradient(ellipse 80% 42% at 50% 47%, rgba(40,28,18,0.52) 0%, rgba(40,28,18,0.22) 60%, rgba(40,28,18,0.05) 100%); }
 """
@@ -200,8 +199,8 @@ def styling_file():
   mask-image: linear-gradient(to bottom, transparent 0, #000 70px, #000 1370px, transparent 1440px); }}
 .sty-fg img {{ position: absolute; left: 0; top: 0; width: 1080px; height: 1440px; object-fit: contain; }}
 #sty-note {{ position: absolute; left: 0; width: 1080px; top: 176px; text-align: center; z-index: 10;
-  font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 38px; color: #FAF5EC;
-  letter-spacing: 0.02em; text-shadow: 0 1px 3px rgba(25,16,10,0.55), 0 2px 18px rgba(25,16,10,0.7); }}
+  font-family: 'Josefin Sans', sans-serif; font-weight: 600; font-size: 28px; text-transform: uppercase; color: #FAF5EC;
+  letter-spacing: 0.22em; text-shadow: 0 1px 3px rgba(25,16,10,0.55), 0 2px 18px rgba(25,16,10,0.7); }}
   </style>
   <div id="root" data-composition-id="styling" data-width="{W}" data-height="{H}" data-duration="{STYLING['dur']}">
     <div id="sty-all">
@@ -228,16 +227,16 @@ def outro_file():
 .ground {{ position: absolute; inset: 0; background: #F4EEE3; }}
 .grain {{ position: absolute; inset: 0; background: radial-gradient(ellipse 70% 55% at 50% 45%, rgba(255,252,245,0.9) 0%, rgba(231,220,200,0.55) 100%); }}
 .card {{ position: absolute; left: 90px; width: 900px; top: 470px; text-align: center; color: #3D2D21; }}
-#outro-brand {{ font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 124px; letter-spacing: 0.30em;
-  margin-right: -0.30em; line-height: 1; }}
+#outro-brand {{ font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 118px; letter-spacing: 0.26em;
+  margin-right: -0.26em; line-height: 1; }}
 #outro-brand span {{ display: inline-block; }}
-#outro-tag {{ font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; font-size: 60px; margin-top: 34px; color: #5A4434; }}
+#outro-tag {{ font-family: 'Great Vibes', cursive; font-weight: 400; font-size: 88px; margin-top: 18px; line-height: 1.1; color: #5A4434; }}
 #outro-rule {{ width: 96px; height: 1px; background: #6E6C3F; margin: 56px auto 0; }}
-#outro-craft {{ font-family: 'Jost', sans-serif; font-weight: 400; font-size: 28px; letter-spacing: 0.30em; text-transform: uppercase;
+#outro-craft {{ font-family: 'Josefin Sans', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.30em; text-transform: uppercase;
   margin-top: 52px; color: #6E6C3F; }}
-#outro-disc {{ font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 46px; margin-top: 100px; color: #3D2D21; }}
-#outro-ig {{ font-family: 'Jost', sans-serif; font-weight: 500; font-size: 40px; letter-spacing: 0.04em; margin-top: 34px; color: #2E2118; }}
-#outro-cta {{ font-family: 'Jost', sans-serif; font-weight: 500; font-size: 36px; letter-spacing: 0.04em; margin-top: 18px; color: #2E2118; }}
+#outro-disc {{ font-family: 'Bodoni Moda', serif; font-size: 44px; margin-top: 92px; color: #3D2D21; }}
+#outro-ig {{ font-family: 'Josefin Sans', sans-serif; font-weight: 600; font-size: 40px; letter-spacing: 0.04em; margin-top: 34px; color: #2E2118; }}
+#outro-cta {{ font-family: 'Josefin Sans', sans-serif; font-weight: 600; font-size: 36px; letter-spacing: 0.04em; margin-top: 18px; color: #2E2118; }}
   </style>
   <div id="root" data-composition-id="outro" data-width="{W}" data-height="{H}" data-duration="{OUTRO['dur']}">
     <div class="ground" id="outro-ground"></div>
@@ -302,7 +301,7 @@ def captions_file():
 {FONT_FACES}
 #root {{ position: absolute; inset: 0; overflow: hidden; }}
 .cap {{ position: absolute; left: 0; width: 1080px; top: 1196px; text-align: center; z-index: 70; overflow: visible; }}
-.cap-t {{ display: inline-block; max-width: 860px; font-family: 'Jost', sans-serif; font-weight: 400; font-size: 40px;
+.cap-t {{ display: inline-block; max-width: 860px; font-family: 'Josefin Sans', sans-serif; font-weight: 500; font-size: 42px;
   line-height: 1.3; letter-spacing: 0.01em; color: #F7F1E6; text-shadow: 0 1px 14px rgba(25,16,10,0.55); }}
   </style>
   <div id="root" data-composition-id="captions" data-width="{W}" data-height="{H}" data-duration="{TOTAL}">
