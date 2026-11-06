@@ -1,0 +1,6 @@
+# HyperFrames caches and check/snapshot artifacts
+tessera-reel/.hyperframes/
+# intermediate audio (rebuilt by scripts/build_audio.py)
+tessera-reel/assets/audio/*_raw.wav
+# full-quality master render (81 MB; re-render with `npx hyperframes render`)
+deliverables/TESSERA_Ecoprint_Reel.mp4

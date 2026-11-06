@@ -1,0 +1,69 @@
+<template>
+  <style>
+
+@font-face { font-family: 'Cormorant Garamond'; font-weight: 400; font-style: normal; src: url('assets/fonts/cormorant-garamond-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-weight: 400; font-style: italic; src: url('assets/fonts/cormorant-garamond-latin-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-weight: 500; font-style: normal; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-weight: 300; font-style: italic; src: url('assets/fonts/cormorant-garamond-latin-300-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-weight: 300; font-style: normal; src: url('assets/fonts/jost-latin-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-weight: 400; font-style: normal; src: url('assets/fonts/jost-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-weight: 500; font-style: normal; src: url('assets/fonts/jost-latin-500-normal.woff2') format('woff2'); }
+
+
+#root { position: absolute; inset: 0; overflow: hidden; }
+.shot { position: absolute; inset: 0; will-change: transform, opacity; }
+.shot video { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+.scrim-top { position: absolute; left: 0; top: 0; width: 1080px; height: 820px; z-index: 50;
+  background: linear-gradient(to bottom, rgba(45,32,23,0.66) 0%, rgba(45,32,23,0.46) 45%, rgba(45,32,23,0) 100%); }
+.scrim-bot { position: absolute; left: 0; top: 1000px; width: 1080px; height: 920px; z-index: 50;
+  background: linear-gradient(to top, rgba(45,32,23,0.70) 0%, rgba(45,32,23,0.52) 45%, rgba(45,32,23,0) 100%); }
+.hl { position: absolute; left: 90px; width: 900px; z-index: 60; text-align: center;
+  font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #F4EEE3; line-height: 1.08;
+  letter-spacing: -0.005em; text-shadow: 0 2px 24px rgba(30,20,12,0.35); }
+.hl .line { display: block; }
+.hl em { font-style: italic; color: #EFE2C6; }
+.rule { display: block; width: 72px; height: 1px; margin: 34px auto 0; background: #C9C3A8; }
+
+.hook-txt { position: absolute; left: 90px; width: 900px; top: 700px; z-index: 60; text-align: center;
+  font-family: 'Cormorant Garamond', serif; color: #F7F1E6; font-size: 108px; line-height: 1.04;
+  text-shadow: 0 2px 30px rgba(30,20,12,0.45); }
+.hook-txt .line { display: block; }
+.hook-txt em { font-style: italic; }
+#hook-q { top: 690px; font-size: 96px; }
+.hook-vig { position: absolute; inset: 0; z-index: 50;
+  background: radial-gradient(ellipse 80% 42% at 50% 47%, rgba(40,28,18,0.52) 0%, rgba(40,28,18,0.22) 60%, rgba(40,28,18,0.05) 100%); }
+
+
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920" data-duration="4.6">
+    <div class="shot" id="hook-v0-wrap" data-layout-allow-overflow style="z-index:1">
+      <video id="hook-v0" class="clip" src="assets/footage/h1.mp4" data-start="0.0" data-duration="2.8" data-track-index="0" muted playsinline></video>
+    </div>
+    <div class="shot" id="hook-v1-wrap" data-layout-allow-overflow style="z-index:2">
+      <video id="hook-v1" class="clip" src="assets/footage/h2.mp4" data-start="2.6" data-duration="1.933" data-track-index="1" muted playsinline></video>
+    </div>
+    <div class="hook-vig" id="hook-vig"></div>
+    <div class="hook-txt clip" id="hook-a" data-start="0" data-duration="2.62" data-track-index="9">
+      <span class="line" id="hook-a1">Flowers fade.</span>
+      <span class="line" id="hook-a2"><em>Leaves fall.</em></span>
+    </div>
+    <div class="hook-txt clip" id="hook-q" data-start="2.62" data-duration="1.98" data-track-index="10">
+      <span class="line" id="hook-q1">But what if</span>
+      <span class="line" id="hook-q2">their beauty</span>
+      <span class="line" id="hook-q3"><em>could stay?</em></span>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hook-v0-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.8, ease: "none"}, 0.0);
+    tl.fromTo("#hook-v1-wrap", {scale: 1.0}, {scale: 1.05, duration: 1.933, ease: "none"}, 2.6);
+    tl.fromTo("#hook-v1-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 2.6);
+    tl.fromTo("#hook-a2", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.8, ease: "power3.out"}, 0.85);
+    tl.to("#hook-a", {opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power2.in"}, 2.3);
+    tl.fromTo("#hook-q1", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out"}, 2.65);
+    tl.fromTo("#hook-q2", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out"}, 2.8);
+    tl.fromTo("#hook-q3", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.8, ease: "power3.out"}, 2.98);
+    tl.to("#hook-q", {opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power2.in"}, 4.25);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>
