@@ -94,7 +94,25 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - WhatsApp link (for stories/bio): https://wa.me/971505252491
 - Market: UAE (+971 number) — write prices in AED if prices are ever shown.
 
+## Logo & brand look (confirmed by user)
+- `images/tessera-logo.jpg` — original logo on white (1536x1536).
+- `images/tessera-logo-transparent.png` — cropped, white removed.
+  WARNING: the face inside the scarf is white, so it also became transparent.
+  Use it only on white/cream areas. On top of a photo, put it on a cream (#FAF6EA) badge or strip.
+- Logo = woman's profile in a scarf made of autumn leaves + "TESSERA" in a classic serif with a gold shadow.
+- Colours sampled from the logo:
+  - Olive ink (text): #41442E — headlines, body text
+  - Cream: #FAF6EA — backgrounds, badges
+  - Gold (text shadow): #E7C698 — thin lines, accents
+  - Rust: #9A4E32
+  - Burnt orange: #D7824C
+  - Marigold: #E2B973
+  - Sage leaf green: #7A8A5A (approx.)
+  - Deep brown: #4A3D2B
+- Fonts: logo is a Trajan-style serif. Use **Cinzel** (free, Google Fonts) for short headlines in caps,
+  and a soft serif like **Cormorant Garamond** for lines/taglines. No modern sans-serif headlines.
+- Post style: cream background or full-bleed photo, olive text, thin gold rule, small logo bottom corner. Calm, lots of space.
+
 ## Open questions for the user (fill in as answered)
 - Price display (yes/no)?
 - Fabric and craft for library photos (block print? bandhani? ecoprint?).
-- Brand colours / fonts / logo file.
