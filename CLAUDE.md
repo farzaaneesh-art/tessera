@@ -12,7 +12,9 @@ It is the standing brief for all Tessera work, mainly **Instagram posts**.
 1. `images/CONTACT_SHEET.jpg` — look at this FIRST to find the right photo. Do not open all 59 photos.
 2. `images/library/` — 59 real product photos (JPEG, max 1400px).
 3. Root `*.png.png` — 10 polished catalog shots used in README (names below).
-   User confirmed 2026-11-08: these are NOT AI-generated → keep Instagram `isAiGenerated: false`.
+   WARNING (user confirmed 2026-11-08): the MODEL in these catalog shots is AI-generated.
+   Do not use them as product photos in posts. Use real photos of the actual piece. If a catalog shot is ever used,
+   set Instagram `isAiGenerated: true`.
 
 ## Rules for any post
 - Photos are the source of truth. Never change colours, prints, motifs, borders, tassels or garment shape.
@@ -50,7 +52,8 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - IMG_1626 — group, wide shot (small/landscape)
 
 **Leaf-print / ecoprint kaftans (on hanger)**
-- IMG_1657 — cream with large grey-green leaves (user 2026-11-08: NOT the Mixed Design Ecoprint; name unknown)
+- IMG_1657 — cream with large grey-green leaves — CONFIRMED by user 2026-11-08: this is the real **Mixed Design Ecoprint**.
+  Full-resolution copy: `images/mixed-design-ecoprint-real.jpg` (1512x2016).
 - IMG_1661 — multicolour leaf print, yellow/blue
 - IMG_1674 — rust/orange
 - IMG_1691 — group with magenta dip-dye (landscape)
