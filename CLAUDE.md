@@ -91,12 +91,22 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - Instagram handle: **@weartessera** (confirmed 2026-11-07 via Metricool — no dot/underscore)
 - **Which tool for what (decided by user 2026-11-07):**
   - **Scheduling → Metricool** (brand "weartessera", blogId 7805847, timezone Asia/Dubai). All planned/future posts go here.
-  - **Comments + quick "post now" → direct Instagram API** (Instagram API with Instagram Login, `graph.instagram.com`).
+  - **Comments + quick "post now" → direct Instagram API** via **`graph.facebook.com`** (NOT graph.instagram.com).
   - Never post the same content through both tools — check Metricool's schedule before a quick post to avoid duplicates.
-- Direct API setup:
-  - Cloud environment **"tessera"** allows `graph.instagram.com` and `graph.facebook.com`.
-  - Access token is stored as a network secret on that environment (never in the repo or chat). Status: pending — user is creating the Meta app.
-  - Token lasts **60 days**. Refresh before expiry (`GET https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token`), then re-save the new token in the environment's secrets.
+- Direct API setup (WORKING, verified 2026-11-07):
+  - Meta app: **"tessera poster"** (app ID 1908856527152557), Instagram API with **Unified login**
+    (Meta no longer offers "Instagram login" for new apps). Configuration ID 1438532388484547.
+  - Instagram Business Account ID: **17841480006031639** (@weartessera). Use it as the node in every call.
+  - Token: **System-user access token, never expires**. Facebook-style token → only works on `graph.facebook.com`.
+    Stored as a network secret on cloud environment **"tessera"**; the proxy adds it automatically.
+    Never put the token in the repo, chat, or a curl header.
+  - Granted permissions: instagram_basic, instagram_content_publish, instagram_manage_comments,
+    instagram_manage_messages (no ads permissions). Publishing limit: 100 posts per 24h.
+  - A stale secret for `graph.instagram.com` also exists on the environment and does not work — ignore it.
+  - Quick checks: `GET https://graph.facebook.com/v24.0/17841480006031639?fields=username,media_count`
+    and `.../17841480006031639/media?fields=id,caption,comments_count,timestamp`.
+  - Publish flow: POST `/{ig-id}/media` (image_url + caption) → POST `/{ig-id}/media_publish` (creation_id).
+    Always show the user the final image + caption and get a clear "yes" before media_publish — it is public and immediate.
   - The `instagram` plugin connector (comments-only webhook) is NOT used — it needs a public webhook and does not fit cloud sessions.
 - Image hosting for posting: repo is **public**, so images can be passed as
   `https://raw.githubusercontent.com/farzaaneesh-art/tessera/<branch>/<path>` (push first; Instagram needs JPEG for feed images).
