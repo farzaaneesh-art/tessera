@@ -12,9 +12,9 @@ FONT_FACES = """
 @font-face { font-family: 'Bodoni Moda'; font-weight: 400; src: url('assets/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Bodoni Moda'; font-weight: 500; src: url('assets/fonts/bodoni-moda-latin-500-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Great Vibes'; font-weight: 400; src: url('assets/fonts/great-vibes-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Josefin Sans'; font-weight: 400; src: url('assets/fonts/josefin-sans-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Josefin Sans'; font-weight: 500; src: url('assets/fonts/josefin-sans-latin-500-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Josefin Sans'; font-weight: 600; src: url('assets/fonts/josefin-sans-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 500; src: url('assets/fonts/montserrat-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 600; src: url('assets/fonts/montserrat-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 700; src: url('assets/fonts/montserrat-latin-700-normal.woff2') format('woff2'); }
 """
 
 # Scenes: id, global start, duration, entry ("wipe" | "dissolve"), shots, headline blocks
@@ -83,9 +83,9 @@ def scene_file(sc):
                 js.append(f'tl.fromTo("{w}", {{"--wipe": "-25%"}}, {{"--wipe": "125%", duration: 0.9, ease: "power2.inOut"}}, 0);')
             elif sc["entry"] == "dissolve":
                 dis = 0.6 if sid == "beauty" else 0.45
-                js.append(f'tl.fromTo("{w}", {{opacity: 0}}, {{opacity: 1, duration: {dis}, ease: "power1.inOut"}}, 0);')
+                js.append(f'tl.fromTo("{w}", {{opacity: 0, filter: "blur(16px)"}}, {{opacity: 1, filter: "blur(0px)", duration: {dis} + 0.15, ease: "power2.out"}}, 0);')
         else:
-            js.append(f'tl.fromTo("{w}", {{opacity: 0}}, {{opacity: 1, duration: 0.4, ease: "power1.inOut"}}, {st});')
+            js.append(f'tl.fromTo("{w}", {{opacity: 0, filter: "blur(14px)"}}, {{opacity: 1, filter: "blur(0px)", duration: 0.6, ease: "power2.out"}}, {st});')
     wipe_css = ""
     if sc["entry"] == "wipe":
         wipe_css = (f"#{sid}-v0-wrap {{ --wipe: -25%; -webkit-mask-image: linear-gradient(to top, #000 calc(var(--wipe) - 25%), transparent var(--wipe));"
@@ -131,12 +131,12 @@ def scene_file(sc):
 
 
 HOOK_EXTRA_CSS = """
-.hook-txt { position: absolute; left: 90px; width: 900px; top: 700px; z-index: 60; text-align: center;
-  font-family: 'Bodoni Moda', serif; color: #F7F1E6; font-size: 96px; line-height: 1.1;
+.hook-txt { position: absolute; left: 60px; width: 960px; top: 660px; z-index: 60; text-align: center;
+  font-family: 'Bodoni Moda', serif; color: #FFFAF2; font-size: 124px; line-height: 1.08;
   text-shadow: 0 2px 30px rgba(30,20,12,0.45); }
 .hook-txt .line { display: block; }
 .hook-txt em { font-family: 'Great Vibes', cursive; font-style: normal; font-size: 1.32em; line-height: 1.0; }
-#hook-q { top: 660px; font-size: 88px; }
+#hook-q { top: 560px; font-size: 112px; }
 .hook-vig { position: absolute; inset: 0; z-index: 50;
   background: radial-gradient(ellipse 80% 42% at 50% 47%, rgba(40,28,18,0.52) 0%, rgba(40,28,18,0.22) 60%, rgba(40,28,18,0.05) 100%); }
 """
@@ -184,7 +184,7 @@ def styling_file():
                     f'data-track-index="{i + 3}" alt="AI-generated styling visual">\n      </div>\n    </div>')
         js.append(f'tl.fromTo("#sty-f{i}", {{scale: {s0}, y: 0}}, {{scale: {s1}, y: {dy}, duration: {dur}, ease: "none"}}, {st});')
         if i:
-            js.append(f'tl.fromTo("#sty-w{i}", {{opacity: 0}}, {{opacity: 1, duration: 0.45, ease: "power1.inOut"}}, {st});')
+            js.append(f'tl.fromTo("#sty-w{i}", {{opacity: 0, filter: "blur(14px)"}}, {{opacity: 1, filter: "blur(0px)", duration: 0.55, ease: "power2.out"}}, {st});')
     body = "\n".join(imgs)
     jsb = "\n    ".join(js)
     return f"""<template>
@@ -199,8 +199,8 @@ def styling_file():
   mask-image: linear-gradient(to bottom, transparent 0, #000 70px, #000 1370px, transparent 1440px); }}
 .sty-fg img {{ position: absolute; left: 0; top: 0; width: 1080px; height: 1440px; object-fit: contain; }}
 #sty-note {{ position: absolute; left: 0; width: 1080px; top: 176px; text-align: center; z-index: 10;
-  font-family: 'Josefin Sans', sans-serif; font-weight: 600; font-size: 28px; text-transform: uppercase; color: #FAF5EC;
-  letter-spacing: 0.22em; text-shadow: 0 1px 3px rgba(25,16,10,0.55), 0 2px 18px rgba(25,16,10,0.7); }}
+  font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 34px; text-transform: uppercase; color: #FFFFFF;
+  letter-spacing: 0.14em; text-shadow: 0 1px 3px rgba(25,16,10,0.55), 0 2px 18px rgba(25,16,10,0.7); }}
   </style>
   <div id="root" data-composition-id="styling" data-width="{W}" data-height="{H}" data-duration="{STYLING['dur']}">
     <div id="sty-all">
@@ -210,10 +210,54 @@ def styling_file():
   </div>
   <script>
     const tl = gsap.timeline({{ paused: true }});
-    tl.fromTo("#sty-all", {{opacity: 0}}, {{opacity: 1, duration: 0.5, ease: "power1.inOut"}}, 0);
+    tl.fromTo("#sty-all", {{opacity: 0, filter: "blur(16px)"}}, {{opacity: 1, filter: "blur(0px)", duration: 0.6, ease: "power2.out"}}, 0);
     tl.fromTo("#sty-note", {{opacity: 0}}, {{opacity: 1, duration: 0.5, ease: "power2.out"}}, 0.3);
     {jsb}
     window.__timelines["styling"] = tl;
+  </script>
+</template>
+"""
+
+
+LEAKS = [4.45, 14.35, 20.25, 25.75]   # peak times (film clock) of the scene changes
+
+
+def leaks_file():
+    els, js = [], []
+    for i, t in enumerate(LEAKS):
+        els.append(f"""    <div class="leak" id="lk{i}">
+      <div class="lk lk-amber" id="lk{i}-a"></div>
+      <div class="lk lk-cream" id="lk{i}-c"></div>
+      <div class="lk lk-terra" id="lk{i}-t"></div>
+    </div>""")
+        st = round(t - 0.7, 3)
+        js.append(f'tl.fromTo("#lk{i}", {{opacity: 0}}, {{opacity: 0.55, duration: 0.6, ease: "sine.out"}}, {st});')
+        js.append(f'tl.to("#lk{i}", {{opacity: 0, duration: 0.8, ease: "sine.in"}}, {round(t + 0.05, 3)});')
+        d = -1 if i % 2 else 1
+        js.append(f'tl.fromTo("#lk{i}-a", {{xPercent: {-22 * d}, scale: 0.92}}, {{xPercent: {20 * d}, scale: 1.08, duration: 1.6, ease: "sine.inOut"}}, {st});')
+        js.append(f'tl.fromTo("#lk{i}-c", {{xPercent: {-30 * d}, rotation: -6}}, {{xPercent: {26 * d}, rotation: 4, duration: 1.6, ease: "sine.inOut"}}, {st});')
+        js.append(f'tl.fromTo("#lk{i}-t", {{xPercent: {18 * d}, yPercent: -8}}, {{xPercent: {-16 * d}, yPercent: 8, duration: 1.6, ease: "sine.inOut"}}, {st});')
+    body = "\n".join(els)
+    jsb = "\n    ".join(js)
+    return f"""<template>
+  <style>
+#root {{ position: absolute; inset: 0; overflow: hidden; pointer-events: none; }}
+.leak {{ position: absolute; inset: -16%; opacity: 0; mix-blend-mode: screen; }}
+.lk {{ position: absolute; inset: -20%; }}
+.lk-amber {{ background: radial-gradient(ellipse 52% 110% at 12% 55%, rgba(255,236,190,0.9), transparent 45%),
+  radial-gradient(ellipse 70% 120% at 26% 52%, rgba(240,150,70,0.65), transparent 66%); filter: blur(28px); }}
+.lk-cream {{ background: linear-gradient(104deg, transparent 24%, rgba(250,190,110,0.28) 40%, rgba(255,246,214,0.7) 51%,
+  rgba(235,150,80,0.2) 62%, transparent 78%); filter: blur(20px); }}
+.lk-terra {{ background: radial-gradient(ellipse 58% 100% at 80% 36%, rgba(214,120,74,0.55), rgba(190,110,70,0.2) 48%, transparent 76%); filter: blur(40px); }}
+  </style>
+  <div id="root" data-composition-id="leaks" data-width="{W}" data-height="{H}" data-duration="{TOTAL}" data-layout-allow-overflow>
+{body}
+  </div>
+  <script>
+    const tl = gsap.timeline({{ paused: true }});
+    tl.to({{}}, {{ duration: {TOTAL}, ease: "none" }}, 0);
+    {jsb}
+    window.__timelines["leaks"] = tl;
   </script>
 </template>
 """
@@ -226,17 +270,17 @@ def outro_file():
 #root {{ position: absolute; inset: 0; overflow: hidden; }}
 .ground {{ position: absolute; inset: 0; background: #F4EEE3; }}
 .grain {{ position: absolute; inset: 0; background: radial-gradient(ellipse 70% 55% at 50% 45%, rgba(255,252,245,0.9) 0%, rgba(231,220,200,0.55) 100%); }}
-.card {{ position: absolute; left: 90px; width: 900px; top: 470px; text-align: center; color: #3D2D21; }}
-#outro-brand {{ font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 118px; letter-spacing: 0.26em;
-  margin-right: -0.26em; line-height: 1; }}
+.card {{ position: absolute; left: 40px; width: 1000px; top: 360px; text-align: center; color: #3D2D21; }}
+#outro-brand {{ font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 132px; letter-spacing: 0.2em;
+  margin-right: -0.2em; line-height: 1; }}
 #outro-brand span {{ display: inline-block; }}
-#outro-tag {{ font-family: 'Great Vibes', cursive; font-weight: 400; font-size: 88px; margin-top: 18px; line-height: 1.1; color: #5A4434; }}
+#outro-tag {{ font-family: 'Great Vibes', cursive; font-weight: 400; font-size: 112px; margin-top: 14px; line-height: 1.1; color: #4A3628; }}
 #outro-rule {{ width: 96px; height: 1px; background: #6E6C3F; margin: 56px auto 0; }}
-#outro-craft {{ font-family: 'Josefin Sans', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.30em; text-transform: uppercase;
-  margin-top: 52px; color: #6E6C3F; }}
-#outro-disc {{ font-family: 'Bodoni Moda', serif; font-size: 44px; margin-top: 92px; color: #3D2D21; }}
-#outro-ig {{ font-family: 'Josefin Sans', sans-serif; font-weight: 600; font-size: 40px; letter-spacing: 0.04em; margin-top: 34px; color: #2E2118; }}
-#outro-cta {{ font-family: 'Josefin Sans', sans-serif; font-weight: 600; font-size: 36px; letter-spacing: 0.04em; margin-top: 18px; color: #2E2118; }}
+#outro-craft {{ font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 36px; letter-spacing: 0.2em; text-transform: uppercase;
+  margin-top: 48px; color: #5E5C30; }}
+#outro-disc {{ font-family: 'Bodoni Moda', serif; font-size: 60px; margin-top: 84px; color: #3D2D21; }}
+#outro-ig {{ font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 54px; letter-spacing: 0.01em; margin-top: 34px; color: #2A1E16; }}
+#outro-cta {{ font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 48px; letter-spacing: 0.01em; margin-top: 16px; color: #2A1E16; }}
   </style>
   <div id="root" data-composition-id="outro" data-width="{W}" data-height="{H}" data-duration="{OUTRO['dur']}">
     <div class="ground" id="outro-ground"></div>
@@ -300,9 +344,10 @@ def captions_file():
   <style>
 {FONT_FACES}
 #root {{ position: absolute; inset: 0; overflow: hidden; }}
-.cap {{ position: absolute; left: 0; width: 1080px; top: 1196px; text-align: center; z-index: 70; overflow: visible; }}
-.cap-t {{ display: inline-block; max-width: 860px; font-family: 'Josefin Sans', sans-serif; font-weight: 500; font-size: 42px;
-  line-height: 1.3; letter-spacing: 0.01em; color: #F7F1E6; text-shadow: 0 1px 14px rgba(25,16,10,0.55); }}
+.cap {{ position: absolute; left: 0; width: 1080px; top: 1150px; text-align: center; z-index: 70; overflow: visible; }}
+.cap-t {{ display: inline-block; max-width: 940px; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 54px;
+  line-height: 1.25; letter-spacing: 0; color: #FFFFFF; padding: 10px 26px 12px; border-radius: 18px;
+  background: rgba(38,27,19,0.42); text-shadow: 0 1px 6px rgba(25,16,10,0.5); }}
   </style>
   <div id="root" data-composition-id="captions" data-width="{W}" data-height="{H}" data-duration="{TOTAL}">
 {body}
@@ -330,6 +375,9 @@ def index_file():
     hosts.append(f'      <div id="outro" data-composition-id="outro" data-composition-src="compositions/outro.html" '
                  f'data-start="{OUTRO["start"]}" data-duration="{OUTRO["dur"]}" data-track-index="6" data-track-kind="graphics" '
                  f'data-width="{W}" data-height="{H}" style="z-index:6"></div>')
+    hosts.append(f'      <div id="leaks" data-composition-id="leaks" data-composition-src="compositions/leaks.html" '
+                 f'data-start="0" data-duration="{TOTAL}" data-track-index="10" data-track-kind="graphics" '
+                 f'data-width="{W}" data-height="{H}" style="z-index:15"></div>')
     hosts.append(f'      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" '
                  f'data-start="0" data-duration="{TOTAL}" data-track-index="7" data-track-kind="captions" '
                  f'data-width="{W}" data-height="{H}" style="z-index:20"></div>')
@@ -372,6 +420,7 @@ if __name__ == "__main__":
         open(f"compositions/{sc['id']}.html", "w").write(scene_file(sc))
     open("compositions/styling.html", "w").write(styling_file())
     open("compositions/outro.html", "w").write(outro_file())
+    open("compositions/leaks.html", "w").write(leaks_file())
     open("compositions/captions.html", "w").write(captions_file())
     open("index.html", "w").write(index_file())
     print("written")

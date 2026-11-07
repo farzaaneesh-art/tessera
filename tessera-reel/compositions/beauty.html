@@ -4,9 +4,9 @@
 @font-face { font-family: 'Bodoni Moda'; font-weight: 400; src: url('assets/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Bodoni Moda'; font-weight: 500; src: url('assets/fonts/bodoni-moda-latin-500-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Great Vibes'; font-weight: 400; src: url('assets/fonts/great-vibes-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Josefin Sans'; font-weight: 400; src: url('assets/fonts/josefin-sans-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Josefin Sans'; font-weight: 500; src: url('assets/fonts/josefin-sans-latin-500-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Josefin Sans'; font-weight: 600; src: url('assets/fonts/josefin-sans-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 500; src: url('assets/fonts/montserrat-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 600; src: url('assets/fonts/montserrat-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 700; src: url('assets/fonts/montserrat-latin-700-normal.woff2') format('woff2'); }
 
 
 #root { position: absolute; inset: 0; overflow: hidden; }
@@ -40,11 +40,11 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#beauty-v0-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.4, ease: "none"}, 0.0);
-    tl.fromTo("#beauty-v0-wrap", {opacity: 0}, {opacity: 1, duration: 0.6, ease: "power1.inOut"}, 0);
+    tl.fromTo("#beauty-v0-wrap", {opacity: 0, filter: "blur(16px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.6 + 0.15, ease: "power2.out"}, 0);
     tl.fromTo("#beauty-v1-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.4, ease: "none"}, 2.2);
-    tl.fromTo("#beauty-v1-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 2.2);
+    tl.fromTo("#beauty-v1-wrap", {opacity: 0, filter: "blur(14px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.6, ease: "power2.out"}, 2.2);
     tl.fromTo("#beauty-v2-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.0, ease: "none"}, 4.2);
-    tl.fromTo("#beauty-v2-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 4.2);
+    tl.fromTo("#beauty-v2-wrap", {opacity: 0, filter: "blur(14px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.6, ease: "power2.out"}, 4.2);
     tl.to("#beauty-v2-wrap", {opacity: 0, duration: 0.8, ease: "power1.in"}, 5.4);
     tl.to("#beauty-scrim-b", {opacity: 0, duration: 0.8, ease: "power1.in"}, 5.4);
     window.__timelines["beauty"] = tl;

@@ -4,9 +4,9 @@
 @font-face { font-family: 'Bodoni Moda'; font-weight: 400; src: url('assets/fonts/bodoni-moda-latin-400-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Bodoni Moda'; font-weight: 500; src: url('assets/fonts/bodoni-moda-latin-500-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Great Vibes'; font-weight: 400; src: url('assets/fonts/great-vibes-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Josefin Sans'; font-weight: 400; src: url('assets/fonts/josefin-sans-latin-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Josefin Sans'; font-weight: 500; src: url('assets/fonts/josefin-sans-latin-500-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Josefin Sans'; font-weight: 600; src: url('assets/fonts/josefin-sans-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 500; src: url('assets/fonts/montserrat-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 600; src: url('assets/fonts/montserrat-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 700; src: url('assets/fonts/montserrat-latin-700-normal.woff2') format('woff2'); }
 
 
 #root { position: absolute; inset: 0; overflow: hidden; }
@@ -23,12 +23,12 @@
 .hl em { font-family: 'Great Vibes', cursive; font-style: normal; font-size: 1.3em; color: #EFE2C6; }
 .rule { display: block; width: 72px; height: 1px; margin: 34px auto 0; background: #C9C3A8; }
 
-.hook-txt { position: absolute; left: 90px; width: 900px; top: 700px; z-index: 60; text-align: center;
-  font-family: 'Bodoni Moda', serif; color: #F7F1E6; font-size: 96px; line-height: 1.1;
+.hook-txt { position: absolute; left: 60px; width: 960px; top: 660px; z-index: 60; text-align: center;
+  font-family: 'Bodoni Moda', serif; color: #FFFAF2; font-size: 124px; line-height: 1.08;
   text-shadow: 0 2px 30px rgba(30,20,12,0.45); }
 .hook-txt .line { display: block; }
 .hook-txt em { font-family: 'Great Vibes', cursive; font-style: normal; font-size: 1.32em; line-height: 1.0; }
-#hook-q { top: 660px; font-size: 88px; }
+#hook-q { top: 560px; font-size: 112px; }
 .hook-vig { position: absolute; inset: 0; z-index: 50;
   background: radial-gradient(ellipse 80% 42% at 50% 47%, rgba(40,28,18,0.52) 0%, rgba(40,28,18,0.22) 60%, rgba(40,28,18,0.05) 100%); }
 
@@ -55,7 +55,7 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#hook-v0-wrap", {scale: 1.0}, {scale: 1.05, duration: 2.8, ease: "none"}, 0.0);
     tl.fromTo("#hook-v1-wrap", {scale: 1.0}, {scale: 1.05, duration: 1.933, ease: "none"}, 2.6);
-    tl.fromTo("#hook-v1-wrap", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power1.inOut"}, 2.6);
+    tl.fromTo("#hook-v1-wrap", {opacity: 0, filter: "blur(14px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.6, ease: "power2.out"}, 2.6);
     tl.to("#hook-a", {opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power2.in"}, 1.62);
     tl.fromTo("#hook-q1", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out"}, 2.0);
     tl.fromTo("#hook-q2", {opacity: 0, filter: "blur(10px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out"}, 2.16);

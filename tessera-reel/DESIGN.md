@@ -24,7 +24,7 @@ Footage is never re-coloured. The only thing laid over it is a warm-brown gradie
 
 ## Type
 - Display: **Bodoni Moda** 400/500 (headlines, TESSERA). Script: **Great Vibes** (accent words, "Naturally Yours."). Headlines 88–118 px.
-- Support: **Josefin Sans** 500/600. Captions 42 px; labels, disclosure and CTA 28–40 px.
+- Support: **Montserrat** 600/700 (Canva's most-used sans). Captions 54 px on a soft translucent backing; disclosure 34 px; CTA 48–54 px.
 - Max ~5 words per headline line. Captions 3–6 words per group.
 - Files in `assets/fonts/` (OFL licences included).
 
@@ -51,3 +51,8 @@ Footage is never re-coloured. The only thing laid over it is a warm-brown gradie
   "Styling inspiration" section. They are shown whole, unedited, as framed plates on ivory, so they
   read as illustrations, not footage. Each carries the label "AI-generated styling visual".
 - No narration or caption about real fabric or real prints plays over the AI images.
+
+## Transitions (v4)
+- Every shot change: incoming shot arrives with a soft focus-pull (blur 14–16 px → 0 over ~0.6 s) while crossfading.
+- Every scene change (4.45 s, 14.35 s, 20.25 s, 25.75 s): a warm amber/cream/terracotta light leak
+  (`compositions/leaks.html`, screen blend, 55 % peak, ~1.5 s) drifting across the frame.

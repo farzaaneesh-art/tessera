@@ -1,0 +1,59 @@
+<template>
+  <style>
+#root { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.leak { position: absolute; inset: -16%; opacity: 0; mix-blend-mode: screen; }
+.lk { position: absolute; inset: -20%; }
+.lk-amber { background: radial-gradient(ellipse 52% 110% at 12% 55%, rgba(255,236,190,0.9), transparent 45%),
+  radial-gradient(ellipse 70% 120% at 26% 52%, rgba(240,150,70,0.65), transparent 66%); filter: blur(28px); }
+.lk-cream { background: linear-gradient(104deg, transparent 24%, rgba(250,190,110,0.28) 40%, rgba(255,246,214,0.7) 51%,
+  rgba(235,150,80,0.2) 62%, transparent 78%); filter: blur(20px); }
+.lk-terra { background: radial-gradient(ellipse 58% 100% at 80% 36%, rgba(214,120,74,0.55), rgba(190,110,70,0.2) 48%, transparent 76%); filter: blur(40px); }
+  </style>
+  <div id="root" data-composition-id="leaks" data-width="1080" data-height="1920" data-duration="31.6" data-layout-allow-overflow>
+    <div class="leak" id="lk0">
+      <div class="lk lk-amber" id="lk0-a"></div>
+      <div class="lk lk-cream" id="lk0-c"></div>
+      <div class="lk lk-terra" id="lk0-t"></div>
+    </div>
+    <div class="leak" id="lk1">
+      <div class="lk lk-amber" id="lk1-a"></div>
+      <div class="lk lk-cream" id="lk1-c"></div>
+      <div class="lk lk-terra" id="lk1-t"></div>
+    </div>
+    <div class="leak" id="lk2">
+      <div class="lk lk-amber" id="lk2-a"></div>
+      <div class="lk lk-cream" id="lk2-c"></div>
+      <div class="lk lk-terra" id="lk2-t"></div>
+    </div>
+    <div class="leak" id="lk3">
+      <div class="lk lk-amber" id="lk3-a"></div>
+      <div class="lk lk-cream" id="lk3-c"></div>
+      <div class="lk lk-terra" id="lk3-t"></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.to({}, { duration: 31.6, ease: "none" }, 0);
+    tl.fromTo("#lk0", {opacity: 0}, {opacity: 0.55, duration: 0.6, ease: "sine.out"}, 3.75);
+    tl.to("#lk0", {opacity: 0, duration: 0.8, ease: "sine.in"}, 4.5);
+    tl.fromTo("#lk0-a", {xPercent: -22, scale: 0.92}, {xPercent: 20, scale: 1.08, duration: 1.6, ease: "sine.inOut"}, 3.75);
+    tl.fromTo("#lk0-c", {xPercent: -30, rotation: -6}, {xPercent: 26, rotation: 4, duration: 1.6, ease: "sine.inOut"}, 3.75);
+    tl.fromTo("#lk0-t", {xPercent: 18, yPercent: -8}, {xPercent: -16, yPercent: 8, duration: 1.6, ease: "sine.inOut"}, 3.75);
+    tl.fromTo("#lk1", {opacity: 0}, {opacity: 0.55, duration: 0.6, ease: "sine.out"}, 13.65);
+    tl.to("#lk1", {opacity: 0, duration: 0.8, ease: "sine.in"}, 14.4);
+    tl.fromTo("#lk1-a", {xPercent: 22, scale: 0.92}, {xPercent: -20, scale: 1.08, duration: 1.6, ease: "sine.inOut"}, 13.65);
+    tl.fromTo("#lk1-c", {xPercent: 30, rotation: -6}, {xPercent: -26, rotation: 4, duration: 1.6, ease: "sine.inOut"}, 13.65);
+    tl.fromTo("#lk1-t", {xPercent: -18, yPercent: -8}, {xPercent: 16, yPercent: 8, duration: 1.6, ease: "sine.inOut"}, 13.65);
+    tl.fromTo("#lk2", {opacity: 0}, {opacity: 0.55, duration: 0.6, ease: "sine.out"}, 19.55);
+    tl.to("#lk2", {opacity: 0, duration: 0.8, ease: "sine.in"}, 20.3);
+    tl.fromTo("#lk2-a", {xPercent: -22, scale: 0.92}, {xPercent: 20, scale: 1.08, duration: 1.6, ease: "sine.inOut"}, 19.55);
+    tl.fromTo("#lk2-c", {xPercent: -30, rotation: -6}, {xPercent: 26, rotation: 4, duration: 1.6, ease: "sine.inOut"}, 19.55);
+    tl.fromTo("#lk2-t", {xPercent: 18, yPercent: -8}, {xPercent: -16, yPercent: 8, duration: 1.6, ease: "sine.inOut"}, 19.55);
+    tl.fromTo("#lk3", {opacity: 0}, {opacity: 0.55, duration: 0.6, ease: "sine.out"}, 25.05);
+    tl.to("#lk3", {opacity: 0, duration: 0.8, ease: "sine.in"}, 25.8);
+    tl.fromTo("#lk3-a", {xPercent: 22, scale: 0.92}, {xPercent: -20, scale: 1.08, duration: 1.6, ease: "sine.inOut"}, 25.05);
+    tl.fromTo("#lk3-c", {xPercent: 30, rotation: -6}, {xPercent: -26, rotation: 4, duration: 1.6, ease: "sine.inOut"}, 25.05);
+    tl.fromTo("#lk3-t", {xPercent: -18, yPercent: -8}, {xPercent: 16, yPercent: 8, duration: 1.6, ease: "sine.inOut"}, 25.05);
+    window.__timelines["leaks"] = tl;
+  </script>
+</template>
