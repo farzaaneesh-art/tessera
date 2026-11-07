@@ -56,7 +56,7 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - IMG_1692 — pale yellow
 - IMG_1707 — cream/green large leaves
 - IMG_1728 — yellow
-- IMG_1751 — white with magenta dip-dye hem
+- IMG_1751 — white with magenta dip-dye hem — CONFIRMED by user 2026-11-08: this is the **Premium Ecoprint** (real photo of the catalog piece)
 
 **Flat-lay suit sets (kurta + dupatta, on white rug)**
 - Indigo / navy: IMG_2150, IMG_2162, IMG_2611, IMG_2638
