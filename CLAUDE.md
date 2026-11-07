@@ -87,7 +87,14 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - IMG_3391 — white shirt, pink floral
 - IMG_3415 — ombre to magenta dupatta
 
+## Account & ordering (confirmed by user)
+- Instagram handle: **@weartessera** (user wrote "Wear tessera"; exact spelling not yet confirmed — check for a dot/underscore)
+- How to order: **Instagram DM** or **WhatsApp +971 50 525 2491**
+- Default caption CTA: "DM us or WhatsApp +971 50 525 2491 to order."
+- WhatsApp link (for stories/bio): https://wa.me/971505252491
+- Market: UAE (+971 number) — write prices in AED if prices are ever shown.
+
 ## Open questions for the user (fill in as answered)
-- Instagram handle, price display (yes/no), how to order (DM / WhatsApp / website link)?
+- Price display (yes/no)?
 - Fabric and craft for library photos (block print? bandhani? ecoprint?).
 - Brand colours / fonts / logo file.
