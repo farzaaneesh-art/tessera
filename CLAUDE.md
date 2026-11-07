@@ -88,7 +88,9 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - IMG_3415 — ombre to magenta dupatta
 
 ## Account & ordering (confirmed by user)
-- Instagram handle: **@weartessera** (user wrote "Wear tessera"; exact spelling not yet confirmed — check for a dot/underscore)
+- Instagram handle: **@weartessera** (confirmed 2026-11-07 via Metricool — no dot/underscore)
+- Posting/scheduling: Instagram is connected through **Metricool** (brand "weartessera", blogId 7805847, timezone Asia/Dubai).
+  The direct `instagram` plugin connector does not connect in the cloud session; use Metricool instead.
 - How to order: **Instagram DM** or **WhatsApp +971 50 525 2491**
 - Default caption CTA: "DM us or WhatsApp +971 50 525 2491 to order."
 - WhatsApp link (for stories/bio): https://wa.me/971505252491
