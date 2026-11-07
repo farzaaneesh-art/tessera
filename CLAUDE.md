@@ -89,8 +89,17 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 
 ## Account & ordering (confirmed by user)
 - Instagram handle: **@weartessera** (confirmed 2026-11-07 via Metricool — no dot/underscore)
-- Posting/scheduling: Instagram is connected through **Metricool** (brand "weartessera", blogId 7805847, timezone Asia/Dubai).
-  The direct `instagram` plugin connector does not connect in the cloud session; use Metricool instead.
+- **Which tool for what (decided by user 2026-11-07):**
+  - **Scheduling → Metricool** (brand "weartessera", blogId 7805847, timezone Asia/Dubai). All planned/future posts go here.
+  - **Comments + quick "post now" → direct Instagram API** (Instagram API with Instagram Login, `graph.instagram.com`).
+  - Never post the same content through both tools — check Metricool's schedule before a quick post to avoid duplicates.
+- Direct API setup:
+  - Cloud environment **"tessera"** allows `graph.instagram.com` and `graph.facebook.com`.
+  - Access token is stored as a network secret on that environment (never in the repo or chat). Status: pending — user is creating the Meta app.
+  - Token lasts **60 days**. Refresh before expiry (`GET https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token`), then re-save the new token in the environment's secrets.
+  - The `instagram` plugin connector (comments-only webhook) is NOT used — it needs a public webhook and does not fit cloud sessions.
+- Image hosting for posting: repo is **public**, so images can be passed as
+  `https://raw.githubusercontent.com/farzaaneesh-art/tessera/<branch>/<path>` (push first; Instagram needs JPEG for feed images).
 - How to order: **Instagram DM** or **WhatsApp +971 50 525 2491**
 - Default caption CTA: "DM us or WhatsApp +971 50 525 2491 to order."
 - WhatsApp link (for stories/bio): https://wa.me/971505252491
