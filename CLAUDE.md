@@ -69,7 +69,8 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - Pink with maroon dupatta: IMG_2910, IMG_2921, IMG_2930
 - Grey/sage: IMG_3220, IMG_3222
 - Magenta: IMG_3277
-- Blue with gold border, dotted: IMG_3296
+- Blue with gold border, dotted: IMG_3296 — CONFIRMED by user 2026-11-07: **bandhani**, **modal silk**,
+  **unstitched 3-piece** (top + dupatta + bottom). Posted as "blue bandhani modal silk set".
 - Yellow solid + printed dupatta: IMG_3426
 - Pink dotted: IMG_3442
 - Brown/cream geometric print: IMG_3444
