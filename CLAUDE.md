@@ -98,7 +98,8 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - These photos are the source of truth. Preserve exact motifs, colours, print placement, borders, velvet pile and sheen.
   Never recreate, modify, simplify, mirror or invent the print. No AI generation/editing of the product. Only crop, resize, frame, add text.
 - Brand positioning for this line: "Curated Indian craftsmanship. Refined, thoughtful and authentic." Tagline: "Naturally Yours."
-- Unconfirmed until user says so: product names, fibre (type of velvet), hand-block/natural-dye claim, stitched/unstitched, price.
+- CONFIRMED 2026-11-09: 3 separate designs (A, B, C in NOTES.md), 2.5 m fabric each (unit assumed metres), good for winter.
+- Unconfirmed until user says so: product names, fibre (type of velvet), hand-block/natural-dye claim, price.
 
 ## Account & ordering (confirmed by user)
 - Instagram handle: **@weartessera** (confirmed 2026-11-07 via Metricool — no dot/underscore)

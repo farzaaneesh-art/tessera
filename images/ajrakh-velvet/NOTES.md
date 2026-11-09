@@ -44,10 +44,14 @@ Three distinct designs appear. Whether they are separate products or parts of on
 - Feed 4:5 crops are possible from 3:4 with small top/bottom trims.
 - Light is warm natural window light; some highlights are strong (05, 02/09). Keep as is.
 
+## Confirmed by user (2026-11-09)
+- A, B and C are **3 separate designs** (sold separately).
+- Each is **2.5 metres** of fabric (unit assumed metres — user wrote "2.5 fabric each").
+- Positioned as **good for winter**.
+
 ## Open questions for the user
-1. Are A, B and C three separate products, or pieces of one set (e.g. kurta + dupatta + bottom)?
 2. Product names for each?
 3. Hand block printed Ajrakh (natural dyes) or Ajrakh-style print?
 4. Velvet type (silk velvet, viscose/micro velvet, etc.)?
-5. Stitched or unstitched? Sizes / lengths?
+5. Confirm the 2.5 is metres. Width of the fabric?
 6. Price in AED (show or not)?
