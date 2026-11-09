@@ -19,17 +19,18 @@ The edit is code (FFmpeg + Python), not a timeline file. Change the shot list in
 | 2 | 5.6–8.8 | photo e10e3a26, pan down | (same) |
 | 3 | 8.3–11.3 | IMG_2579 0.2–3.2s — print + border band | (same) |
 | 4 | 10.8–14.8 | IMG_2883 28–31s at 0.75x — fabric settling | — |
-| 5 | 14.3–17.1 | IMG_2886 4.6–7.4s — worn as a drape | — |
+| 5 | 14.3–17.1 | IMG_2589 0.5–3.3s — full set, mirror styling | — |
 | 6 | 16.6–19.6 | IMG_2876 3–6s — motif field + panel | Tradition, with a touch of individuality. |
 | 7 | 19.1–22.5 | photo 7937e8cb — styled | (same) |
 | 8 | 22.0–25.2 | photo 154a875b — both pieces | (same) |
-| 9 | 24.7–29.2 | End card | TESSERA / Naturally Yours. / THE AJRAKH COLLECTION / DM to enquire. |
+| 9 | 24.7–29.2 | End card | TESSERA / Naturally Yours. / AJRAKH MASHRU SILK / TOP & BOTTOM SET / DM to enquire. |
 
 ## Footage review (all 16 clips)
-**Used:** IMG_2574, 2579, 2876, 2883, 2886.
+**Used:** IMG_2574, 2579, 2589, 2876, 2883.
 
 **Not used:**
-- IMG_2587, 2589, 2606 and 2610: wide styled shots of the same set-up. The sharper photo 7937e8cb replaces them.
+- IMG_2886: removed at the owner's request (she appears in frame).
+- IMG_2587, 2606 and 2610: wide styled shots of the same set-up. The sharper photo 7937e8cb replaces them.
 - IMG_2607: hands folding the fabric in most frames.
 - IMG_2878 and 2879: short folded shots that repeat 2876.
 - IMG_2881, 2884 and 2885: flat lays and held-up shots that repeat 2876, often with hands in frame.

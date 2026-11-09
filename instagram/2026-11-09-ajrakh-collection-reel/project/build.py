@@ -23,7 +23,7 @@ shots = [
     img("e10e3a26-image.jpg", 3.2, 0.5, (1.10, 1.10), pan="down"),              # 2 mirror styling, field down into motif panel
     vid("IMG_2579.mp4", 0.2, 3.0, 1.0, (1.00, 1.04), LOWRES),                   # 3 print + border band
     vid("IMG_2883_compressed.mp4", 28.0, 3.0, 0.75, (1.00, 1.04), LOWRES),      # 4 fabric settling, slowed
-    vid("IMG_2886_compressed.mp4", 4.6, 2.8, 1.0, (1.03, 1.00), LOWRES),        # 5 worn as a drape, walking
+    vid("IMG_2589.mp4", 0.5, 2.8, 1.0, (1.03, 1.00), LOWRES),                   # 5 full set, mirror styling
     vid("IMG_2876.mp4", 3.0, 3.0, 1.0, (1.00, 1.04), LOWRES),                   # 6 motif field + panel
     img("7937e8cb-image.jpg", 3.4, 0.5, (1.00, 1.05)),                          # 7 styled set
     img("154a875b-image.jpg", 3.2, 0.5, (1.05, 1.00)),                          # 8 both pieces, final product shot

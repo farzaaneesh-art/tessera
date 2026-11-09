@@ -55,7 +55,8 @@ d = ImageDraw.Draw(card)
 y = 300 + logo.height + 115
 spaced(d, y, "Naturally Yours.", font(IT, 80), OLIVE, 1); y += 80
 d.line([(W / 2 - 70, y), (W / 2 + 70, y)], fill=(201, 160, 105), width=2); y += 105
-spaced(d, y, "THE AJRAKH COLLECTION", font(CZ, 44), BROWN, 8); y += 120
+spaced(d, y, "AJRAKH MASHRU SILK", font(CZ, 48), BROWN, 9); y += 64
+spaced(d, y, "TOP & BOTTOM SET", font(JO, 26), BROWN, 6); y += 110
 spaced(d, y, "DM to enquire.", font(IT, 62), OLIVE, 1); y += 72
 spaced(d, y, "WhatsApp +971 50 525 2491", font(JOL, 30), BROWN, 2)
 card.save(f"{OUT}/endcard.png")
@@ -73,7 +74,7 @@ cov = Image.new("RGB", (W, H), (250, 246, 234)); cov.paste(ph, (0, BAND))
 d = ImageDraw.Draw(cov)
 spaced(d, 330, "TESSERA", font(CZ, 40), OLIVE, 16)
 d.line([(W / 2 - 50, 366), (W / 2 + 50, 366)], fill=(201, 160, 105), width=2)
-spaced(d, 452, "The Ajrakh Collection", font(IT, 88), OLIVE, 1)
-spaced(d, 512, "NATURALLY YOURS", font(JO, 24), BROWN, 6)
+spaced(d, 452, "Ajrakh Mashru Silk", font(IT, 92), OLIVE, 1)
+spaced(d, 512, "TOP & BOTTOM SET", font(JO, 24), BROWN, 6)
 cov.save(f"{OUT}/cover.jpg", quality=95)
 print("ok")
