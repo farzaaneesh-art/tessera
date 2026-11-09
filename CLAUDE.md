@@ -92,6 +92,14 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - IMG_3391 — white shirt, pink floral
 - IMG_3415 — ombre to magenta dupatta
 
+## Ajrakh Velvet collection (official library, added 2026-11-09)
+- Folder: `images/ajrakh-velvet/` — 9 real product photos + `CONTACT_SHEET.jpg` + `NOTES.md` (visual study, rules, open questions).
+  READ `NOTES.md` BEFORE ANY AJRAKH WORK.
+- These photos are the source of truth. Preserve exact motifs, colours, print placement, borders, velvet pile and sheen.
+  Never recreate, modify, simplify, mirror or invent the print. No AI generation/editing of the product. Only crop, resize, frame, add text.
+- Brand positioning for this line: "Curated Indian craftsmanship. Refined, thoughtful and authentic." Tagline: "Naturally Yours."
+- Unconfirmed until user says so: product names, fibre (type of velvet), hand-block/natural-dye claim, stitched/unstitched, price.
+
 ## Account & ordering (confirmed by user)
 - Instagram handle: **@weartessera** (confirmed 2026-11-07 via Metricool — no dot/underscore)
 - **Which tool for what (decided by user 2026-11-07):**
