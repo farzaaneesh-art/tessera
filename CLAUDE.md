@@ -118,7 +118,7 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - **Ajrakh Velvet, dandelion panel** (ivory centre panel with indigo dandelion/umbel blooms, framed by dense red & indigo Ajrakh field): velvet, natural-dyed, hand-block-printed Ajrakh, 2.5 m top cut. Confirmed 2026-11-09.
 - **Ajrakh Mashru Top & Bottom Set** (blue with red lotus/paisley field + triangle borders; second piece darker indigo with arched tree motifs): mashru, hand-block-printed Ajrakh, natural dye. Confirmed 2026-11-09. No length given.
 - **Ajrakh Mashru Silk Top & Bottom Set, red** (deep red medallion-print top + red bottom with lozenge motifs and medallion panel): Ajrakh mashru silk. Confirmed 2026-11-09. Dye/print method not confirmed.
-- Owner appears in some raw clips (e.g. IMG_2886): never show her in posts unless she asks.
+- Owner appears in some raw clips (e.g. IMG_2886): never show the owner in posts unless they ask.
 - Ajrakh red/indigo/ivory piece (IMG_2852–2871 reel): user called it "Ajrakh Velvet", but the zip was named "Ajrakh_Mashru" — fabric NOT confirmed.
 
 ## Open questions for the user (fill in as answered)

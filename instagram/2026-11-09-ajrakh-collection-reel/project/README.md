@@ -29,7 +29,7 @@ The edit is code (FFmpeg + Python), not a timeline file. Change the shot list in
 **Used:** IMG_2574, 2579, 2589, 2876, 2883.
 
 **Not used:**
-- IMG_2886: removed at the owner's request (she appears in frame).
+- IMG_2886: removed at the owner's request (the owner appears in frame).
 - IMG_2587, 2606 and 2610: wide styled shots of the same set-up. The sharper photo 7937e8cb replaces them.
 - IMG_2607: hands folding the fabric in most frames.
 - IMG_2878 and 2879: short folded shots that repeat 2876.
