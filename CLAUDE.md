@@ -116,6 +116,7 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 ## Confirmed fabric products (user-stated)
 - **Ajrakh Velvet** (grey-brown with ivory star motifs, blue, striped sawtooth border): velvet, natural-dyed, hand-block-printed Ajrakh, sold as a 2.5 m top cut. Confirmed 2026-11-09.
 - **Ajrakh Velvet, dandelion panel** (ivory centre panel with indigo dandelion/umbel blooms, framed by dense red & indigo Ajrakh field): velvet, natural-dyed, hand-block-printed Ajrakh, 2.5 m top cut. Confirmed 2026-11-09.
+- **Ajrakh Mashru Top & Bottom Set** (blue with red lotus/paisley field + triangle borders; second piece darker indigo with arched tree motifs): mashru, hand-block-printed Ajrakh, natural dye. Confirmed 2026-11-09. No length given.
 - Ajrakh red/indigo/ivory piece (IMG_2852–2871 reel): user called it "Ajrakh Velvet", but the zip was named "Ajrakh_Mashru" — fabric NOT confirmed.
 
 ## Open questions for the user (fill in as answered)
