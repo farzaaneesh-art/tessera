@@ -34,6 +34,13 @@ It is the standing brief for all Tessera work, mainly **Instagram posts**.
 | yellow-kaftan-tessera.png.png | Yellow Kaftan Tessera | botanical prints |
 | yellow-marigold-modal.png.png | Yellow Marigold Modal | modal fabric |
 
+## Confirmed products from user requests
+| Product | Confirmed details (user, 2026-11-10) |
+|---|---|
+| Ajrakh Modal (2.5 m unstitched) | pure Ajrakh, handmade, hand block printed, naturally dyed, modal ("modal silk" in user's words). Visible print irregularities = proof of hand block printing; use this as a selling point. Files: instagram/TESSERA_AJRAKH_MODAL_FINAL/ |
+
+Note on "modal silk": modal is a plant-based fibre (from beech wood), not silk. Prefer "modal" or "silky modal" in public copy unless the user says otherwise.
+
 ## Photo library inventory (`images/library/`) — visual only, NAMES/FABRICS UNCONFIRMED
 Built from the contact sheet. Ask the user before naming a product publicly.
 
