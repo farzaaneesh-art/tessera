@@ -117,7 +117,7 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 ## Performance learnings (Metricool data, account start 7 Oct 2026 → 11 Nov 2026)
 - 18 followers, following only 4. 15 reels + 6 carousels posted.
 - Reels reach new people (60–1,800 reach). Carousels reach almost nobody (6–19 reach). Use reels for growth; carousels max 1/week.
-- Best by far: PROCESS / STORY reels about ecoprint (26 Oct leaf-laying + reveal: 2,248 views, 65% kept watching;
+- Best by far: PROCESS / STORY reels about ecoprint (26 Oct leaf reveal + drying: 2,248 views, 65% kept watching;
   27 Oct "why handmade costs more": 488 views, 6 saves, 8 shares). Every product-showcase reel: 60–215 views, 70–88% skipped.
 - So: open with motion/reveal in the first second, on-screen text hook, tell the making story. Product-only = skipped.
 - Use ONE call to action consistently (past posts mixed DM ECO / DM KAFTAN / comment RED / WhatsApp).
@@ -185,16 +185,13 @@ This is about TWO-THIRDS of all stock by money and units. It must sell, not just
 - First ad test (proposed 11 Nov): boost the 27 Oct "why handmade costs more" reel, goal = MESSAGES (never "followers"/"profile visits"),
   UAE women 25–55, ~AED 25/day for 7 days. Success rule: ad cost per order must be lower than profit per piece.
   Do NOT advertise the 24 Oct reel until its caption is corrected (it says "silk"; the kaftan is MODAL SILK — owner confirmed).
-- 26 Oct leaf-laying footage: filmed by the OWNER and her family at the artisan workshop in Kerala, taking part in the process.
-  Owner gave her RAW clips to the maker to edit; the maker posted that edit on their page FIRST, then the owner posted it.
-  Raw footage = owner's. The edited version (cuts, music, text) was made by the maker — for ads, make Tessera's OWN new edit
-  from the raw clips (own text, Meta commercial-safe music, Tessera branding) so it is original and not identical to the maker's post.
-  The maker's post describes it as a workshop that the owner's family attended.
-  The maker's edit has THEIR logo + Instagram handle burned into every frame, a commercial film song, ~94 s, 512x910 (low quality).
-  NEVER use or re-cut that file (watermark advertises the supplier; music blocks ads; removing someone's watermark is not OK).
-  Only use the owner's ORIGINAL phone clips.
-  So the honest story (matches the maker's post): "I travelled to Idukki, Kerala to see how our pieces are made and
-  laid the leaves with the artisans myself." Never imply Tessera makes the pieces. Ask for more raw clips from that visit.
+- 26 Oct reel (owner's best, 2,248 views) checked 11 Nov: it is the OWNER'S OWN edit, NOT the maker's.
+  Content: close-up peeling dried leaves to reveal prints -> family unrolling the fabric -> fabrics drying on lines outdoors.
+  No supplier logo. ORIGINAL — safe to boost/advertise. Strong first-second hook (leaf peeled off print).
+  If Instagram greys out "Boost", it is the licensed music: re-post a copy with a sound from Meta's commercial library.
+  Honest framing: "I travelled to Idukki, Kerala and took part in the process with the artisans." Never "we make".
+- The maker separately posted a DIFFERENT edit (leaf-laying, their logo burned into every frame, film song, Feb 2026).
+  NEVER use or re-cut the maker's edit. Only the owner's own clips/edits.
 - Do NOT name or tag the supplier in public posts/ads (customers could buy direct). Credit as "artisans in Idukki, Kerala".
 - Get the maker's written OK (a WhatsApp message is enough) to use workshop footage in paid ads.
 
