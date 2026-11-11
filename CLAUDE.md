@@ -143,8 +143,19 @@ Tessera has TWO separate ranges from two separate sources. Never mix their claim
 - Ecoprint fabric by the metre: pure silk 5 m, linen 6 m, modal silk 10 m
 - Tessera does NOT make these and has NO process footage. Say "handcrafted by artisans in Kerala", never "we make / we press".
 
-**2. Indian heritage suits** — separate inventory, different supplier, NOT ecoprint.
-- Bandhani, Ajrakh (incl. Mashru silk, velvet), Chanderi block print, Bagh print, etc. Most flat-lay suit photos in images/library.
+**2. Indian heritage collection** — separate inventory, several suppliers, NOT ecoprint. ~113 pieces (Jan 2026 purchases).
+This is about TWO-THIRDS of all stock by money and units. It must sell, not just the ecoprint range.
+- Maheshwari suits x14; Nashpal Maheshwari suits x7
+- Lagdi patta dupatta modal suits x10 (red bandhani-style, posted 5 Nov)
+- Modal silk suits x7; "Eco tussar" modal silk suits x6 (trade name — NOT ecoprint; never call it ecoprint)
+- Bandhani modal silk 3-pc set with tissue dupatta x3
+- Ajrakh hand-block Dola silk saree with Nakkashi pallu x4
+- Bagh print: Chanderi silk 3-pc with panel x4; Chanderi silk suit + dupatta x5; Maheshwari silk 3-pc material x8;
+  Modal silk 3-pc + modal silk dupatta x5; tissue 2-pc set x2; Maheshwari 3-pc set x2
+- Ajrakh: modal kurta + dupatta set x13; Mashru 2-pc set x10; velvet top x6; modal top x3
+- Jamdani: Shibori Jamdani (mirror work) x2; Silk linen Jamdani x2
+- Use the supplier's exact fabric words above (e.g. "Chanderi silk", "Maheshwari silk", "Dola silk", "modal silk").
+- Most flat-lay suit photos in images/library belong to this range.
 - Never use the words ecoprint / botanical / "made by nature" for these.
 
 - REPO IS PUBLIC: never commit invoices, cost prices, supplier names or personal addresses.
