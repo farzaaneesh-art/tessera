@@ -190,6 +190,12 @@ This is about TWO-THIRDS of all stock by money and units. It must sell, not just
   No supplier logo. ORIGINAL — safe to boost/advertise. Strong first-second hook (leaf peeled off print).
   If Instagram greys out "Boost", it is the licensed music: re-post a copy with a sound from Meta's commercial library.
   Honest framing: "I travelled to Idukki, Kerala and took part in the process with the artisans." Never "we make".
+- 27 Oct reel ("It's not expensive. It's costly.", ~43 s, owner's own edit) reviewed 11 Nov:
+  avg watch time was only ~10 s, but the KAFTAN first appears at ~29 s — most viewers never saw the product.
+  The black-and-white "EXPENSIVE… betrays you" middle (12–22 s) shows the artisans' own process as the "bad" example — confusing.
+  On-screen text "Every Tessera piece is pressed…by hand" implies Tessera makes it — say "pressed by artisans".
+  Fix = ~20 s re-cut: hook -> making -> drying -> leaf macro -> kaftan by ~12–15 s -> end card. Bigger on-screen text.
+- General reel rule: show the product within the first 10 s; keep ads 15–25 s.
 - The maker separately posted a DIFFERENT edit (leaf-laying, their logo burned into every frame, film song, Feb 2026).
   NEVER use or re-cut the maker's edit. Only the owner's own clips/edits.
 - Do NOT name or tag the supplier in public posts/ads (customers could buy direct). Credit as "artisans in Idukki, Kerala".
