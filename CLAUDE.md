@@ -186,7 +186,11 @@ This is about TWO-THIRDS of all stock by money and units. It must sell, not just
   UAE women 25–55, ~AED 25/day for 7 days. Success rule: ad cost per order must be lower than profit per piece.
   Do NOT advertise the 24 Oct reel until its caption is corrected (it says "silk"; the kaftan is MODAL SILK — owner confirmed).
 - 26 Oct leaf-laying footage: filmed by the OWNER and her family at the artisan workshop in Kerala, taking part in the process.
-  Safe to use in ads. Honest wording: "We visited our artisan partners in Kerala and worked alongside them." Ask for more raw clips from that visit.
+  Safe to use in ads. The maker has ALSO posted it on their page as a workshop that the owner's family attended.
+  So the honest story (matches the maker's post): "I travelled to Idukki, Kerala to see how our pieces are made and
+  laid the leaves with the artisans myself." Never imply Tessera makes the pieces. Ask for more raw clips from that visit.
+- Do NOT name or tag the supplier in public posts/ads (customers could buy direct). Credit as "artisans in Idukki, Kerala".
+- Get the maker's written OK (a WhatsApp message is enough) to use workshop footage in paid ads.
 
 ## Pricing method (proposed 11 Nov 2026 — numbers kept out of repo)
 - Landed cost = invoice cost x 1.20 (shipping, customs, packaging) / INR-per-AED (~25.8 in Nov 2026).
