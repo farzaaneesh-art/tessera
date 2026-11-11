@@ -130,17 +130,35 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - Ajrakh Mashru silk 2-piece; Ajrakh velvet (3 designs, 2.5 m each); Bagh print modal silk.
 - Sourcing: "UAE | Kerala", "Curated Indian craftsmanship".
 
-## Product range & content mix (user confirmed: sells BOTH ecoprint and Indian suits)
-- One brand idea that covers both: **"Natural, slow, handcrafted textiles — craft you can see."**
-  Ecoprint = leaves pressed by hand. Bandhani = dots tied by hand. Ajrakh / block print = printed by hand.
-- Ecoprint is the hero (it is what makes Tessera different and it got the attention). Suits are the main range for orders.
-- Proposed weekly mix (test for 4 weeks, then check Metricool):
-  - 2 reels: ecoprint process / story
-  - 1 reel: suit craft story (how bandhani is tied, how block print is stamped) — only with real footage, never stock
-  - 1 reel: suit styling / try-on / "3 ways to stitch it"
-  - 1 carousel max: best piece of the week, for existing followers
-- Never claim Tessera did the craft itself unless the user confirms it. If pieces are sourced, say "made by artisans in ...".
+## Stock & sourcing (from user's purchase invoices, Oct 2025 + Jan 2026)
+- Tessera BUYS READY-MADE pieces from a maker in Kerala. Tessera does not make them and has NO making/process footage.
+- Captions must never say or imply "we make / we press the leaves". Say "made by artisans in Kerala" / "handcrafted in Kerala".
+- REPO IS PUBLIC: never commit invoices, cost prices, supplier name or personal addresses.
+- Stock bought (approx. units):
+  - Kaftans: ~19 (biggest category, ~1/3 of spend). Fabric per kaftan NOT on invoice — ask before claiming silk/modal/ecoprint.
+  - Fabric by the metre: pure silk material (5 m), linen material (6 m), modal silk material (10 m)
+  - Salwar suit sets: 5 (modal 3-pc x3, mul cotton x1, chanderi x1)
+  - Shirts/tops: cotton shirts, pure linen shirts, linen shirt, linen long top, free-size top (~9)
+  - Mul cotton sarees x2, mul cotton stoles x3, modal silk stole x1, woollen shawls x3
+- Many suit photos in images/library (bandhani, ajrakh, etc.) are NOT on these two invoices — ask the user whether they
+  are in stock / from another supplier before posting them as available.
+
+## Product range & content mix
+- Kaftans are the main stock AND the hero (ecoprint got the attention). Suits/shirts/sarees are secondary.
+- One brand idea: **"Natural, slow, handcrafted textiles from Kerala — craft you can see."**
+- Content that needs NO making footage (user can film on a phone):
+  1. Leaf-vs-print: hold a real leaf next to the print it left. Close-up, natural light.
+  2. Macro close-ups of the print, slowly panning; fabric moving in a breeze/fan.
+  3. Unboxing the parcel from Kerala ("what arrived this week").
+  4. Try-on / styling: one kaftan, 3 ways (belted, layered, abaya-style).
+  5. "Find the leaf" — zoom from full kaftan into one leaf print.
+  6. Voice-over story about the artisans in Kerala over existing photos.
+- Ask the maker for real process clips + permission to post them with credit. Never use stock footage as if it were Tessera's.
+- Proposed weekly mix (test 4 weeks, then check Metricool): 3 kaftan reels (types 1–6), 1 suit/shirt/saree reel, max 1 carousel.
 
 ## Open questions for the user (fill in as answered)
 - Price display (yes/no)?
 - Fabric and craft for library photos (block print? bandhani? ecoprint?).
+- Which kaftans are ecoprint, and which are silk vs modal?
+- Are the bandhani/ajrakh suit photos in stock (another supplier)?
+- Selling price per item and landed cost incl. shipping (keep OUT of repo).
