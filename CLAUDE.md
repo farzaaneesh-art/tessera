@@ -124,27 +124,34 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - Hashtags: 5 max, check spacing (past posts had broken tags like "# modal silk").
 
 ## Fabric/craft claims the user has already made publicly (check before reusing; not mapped to photo files)
-- Ecoprint kaftans: called "modal" (8 Oct) AND "pure silk"/"silk" (10 Oct, 24 Oct) — inconsistent, ask which piece is which.
+- Ecoprint kaftans: called "modal" (8 Oct) AND "pure silk"/"silk" (10 Oct, 24 Oct). Resolved: 1 Russian silk, 1 pure silk, rest modal silk.
 - Bandhani suits in modal silk (blue w/ gold border, pink w/ zari border, red w/ lagdi patta dupatta).
 - Mustard Chanderi block-print 3-piece set with maroon accents; yellow-green Chanderi 3-piece set.
 - Ajrakh Mashru silk 2-piece; Ajrakh velvet (3 designs, 2.5 m each); Bagh print modal silk.
 - Sourcing: "UAE | Kerala", "Curated Indian craftsmanship".
 
-## Stock & sourcing (from user's purchase invoices, Oct 2025 + Jan 2026)
-- Tessera BUYS READY-MADE pieces from a maker in Kerala. Tessera does not make them and has NO making/process footage.
-- Captions must never say or imply "we make / we press the leaves". Say "made by artisans in Kerala" / "handcrafted in Kerala".
-- REPO IS PUBLIC: never commit invoices, cost prices, supplier name or personal addresses.
-- Stock bought (approx. units):
-  - Kaftans: ~19 (biggest category, ~1/3 of spend). Fabric per kaftan NOT on invoice — ask before claiming silk/modal/ecoprint.
-  - Fabric by the metre: pure silk material (5 m), linen material (6 m), modal silk material (10 m)
-  - Salwar suit sets: 5 (modal 3-pc x3, mul cotton x1, chanderi x1)
-  - Shirts/tops: cotton shirts, pure linen shirts, linen shirt, linen long top, free-size top (~9)
-  - Mul cotton sarees x2, mul cotton stoles x3, modal silk stole x1, woollen shawls x3
-- Many suit photos in images/library (bandhani, ajrakh, etc.) are NOT on these two invoices — ask the user whether they
-  are in stock / from another supplier before posting them as available.
+## Stock & sourcing (confirmed by user, 11 Nov 2026)
+Tessera has TWO separate ranges from two separate sources. Never mix their claims.
+
+**1. Ecoprint range** — bought READY-MADE from an ecoprint maker in Kerala (invoices Oct 2025 + Jan 2026).
+- EVERYTHING in this range is ecoprinted (kaftans, suits, shirts, sarees, stoles, shawls, fabric).
+- Kaftans (~19): **1 Russian silk, 1 pure silk, all others modal silk.** Which photo is which: ASK before naming fabric on a post.
+  - Never call a modal silk kaftan "silk" or "pure silk". Write "modal silk".
+  - "Russian silk" is a trade name (usually a blended/synthetic silk-look fabric). Write "Russian silk" exactly; never "pure silk".
+- Ecoprint salwar sets: 5 (modal 3-pc x3, mul cotton x1, chanderi x1)
+- Ecoprint shirts/tops ~9 (cotton, pure linen, linen); mul cotton sarees x2; stoles x4 (mul cotton, modal silk); woollen shawls x3
+- Ecoprint fabric by the metre: pure silk 5 m, linen 6 m, modal silk 10 m
+- Tessera does NOT make these and has NO process footage. Say "handcrafted by artisans in Kerala", never "we make / we press".
+
+**2. Indian heritage suits** — separate inventory, different supplier, NOT ecoprint.
+- Bandhani, Ajrakh (incl. Mashru silk, velvet), Chanderi block print, Bagh print, etc. Most flat-lay suit photos in images/library.
+- Never use the words ecoprint / botanical / "made by nature" for these.
+
+- REPO IS PUBLIC: never commit invoices, cost prices, supplier names or personal addresses.
 
 ## Product range & content mix
-- Kaftans are the main stock AND the hero (ecoprint got the attention). Suits/shirts/sarees are secondary.
+- Ecoprint range is the hero (it is what makes Tessera different and what got attention); kaftans lead it.
+- Indian heritage suits are a second collection. Keep them clearly labelled as a separate collection.
 - One brand idea: **"Natural, slow, handcrafted textiles from Kerala — craft you can see."**
 - Content that needs NO making footage (user can film on a phone):
   1. Leaf-vs-print: hold a real leaf next to the print it left. Close-up, natural light.
@@ -159,6 +166,5 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 ## Open questions for the user (fill in as answered)
 - Price display (yes/no)?
 - Fabric and craft for library photos (block print? bandhani? ecoprint?).
-- Which kaftans are ecoprint, and which are silk vs modal?
-- Are the bandhani/ajrakh suit photos in stock (another supplier)?
+- Which kaftan photos are the Russian silk one and the pure silk one?
 - Selling price per item and landed cost incl. shipping (keep OUT of repo).
