@@ -174,6 +174,15 @@ This is about TWO-THIRDS of all stock by money and units. It must sell, not just
 - Ask the maker for real process clips + permission to post them with credit. Never use stock footage as if it were Tessera's.
 - Proposed weekly mix (test 4 weeks, then check Metricool): 3 kaftan reels (types 1–6), 1 suit/shirt/saree reel, max 1 carousel.
 
+## Owner context & sales lessons (from user, 11 Nov 2026)
+- Owner is new to online selling and to photos/videos; confidence is growing. Keep instructions simple, step-by-step.
+- Owner does NOT want to promote to family/relatives/friends. Wants Meta to reach fresh, interested buyers.
+- Exhibition lesson: at a price-sensitive exhibition (cheap Pakistani suits) people liked the concept but did not buy.
+  The problem was the WRONG AUDIENCE for the price, not only the price. Choose premium/artisan audiences.
+- Likely buyers to target (to test): UAE women 25–55 who value handmade/natural fabrics — Indian (incl. Kerala)
+  professionals for heritage suits; Arab/Emirati and expat women for kaftans (Ramadan/Eid); sustainability-minded expats for ecoprint.
+- Growth plan: organic reels + small Meta "click-to-WhatsApp/message" ads on proven reels; WhatsApp Business to close sales.
+
 ## Open questions for the user (fill in as answered)
 - Price display (yes/no)?
 - Fabric and craft for library photos (block print? bandhani? ecoprint?).
