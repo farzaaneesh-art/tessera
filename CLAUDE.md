@@ -130,6 +130,17 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - Ajrakh Mashru silk 2-piece; Ajrakh velvet (3 designs, 2.5 m each); Bagh print modal silk.
 - Sourcing: "UAE | Kerala", "Curated Indian craftsmanship".
 
+## Product range & content mix (user confirmed: sells BOTH ecoprint and Indian suits)
+- One brand idea that covers both: **"Natural, slow, handcrafted textiles — craft you can see."**
+  Ecoprint = leaves pressed by hand. Bandhani = dots tied by hand. Ajrakh / block print = printed by hand.
+- Ecoprint is the hero (it is what makes Tessera different and it got the attention). Suits are the main range for orders.
+- Proposed weekly mix (test for 4 weeks, then check Metricool):
+  - 2 reels: ecoprint process / story
+  - 1 reel: suit craft story (how bandhani is tied, how block print is stamped) — only with real footage, never stock
+  - 1 reel: suit styling / try-on / "3 ways to stitch it"
+  - 1 carousel max: best piece of the week, for existing followers
+- Never claim Tessera did the craft itself unless the user confirms it. If pieces are sourced, say "made by artisans in ...".
+
 ## Open questions for the user (fill in as answered)
 - Price display (yes/no)?
 - Fabric and craft for library photos (block print? bandhani? ecoprint?).
