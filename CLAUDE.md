@@ -182,9 +182,13 @@ This is about TWO-THIRDS of all stock by money and units. It must sell, not just
 - Likely buyers to target (to test): UAE women 25–55 who value handmade/natural fabrics — Indian (incl. Kerala)
   professionals for heritage suits; Arab/Emirati and expat women for kaftans (Ramadan/Eid); sustainability-minded expats for ecoprint.
 - Growth plan: organic reels + small Meta "click-to-WhatsApp/message" ads on proven reels; WhatsApp Business to close sales.
+- First ad test (proposed 11 Nov): boost the 27 Oct "why handmade costs more" reel, goal = MESSAGES (never "followers"/"profile visits"),
+  UAE women 25–55, ~AED 25/day for 7 days. Success rule: ad cost per order must be lower than profit per piece.
+  Do NOT advertise the 24 Oct reel (says "silk" for mostly-modal kaftans). 26 Oct reel only if the footage is the owner's to use.
 
 ## Open questions for the user (fill in as answered)
 - Price display (yes/no)?
 - Fabric and craft for library photos (block print? bandhani? ecoprint?).
 - Which kaftan photos are the Russian silk one and the pure silk one?
+- Who filmed the leaf-laying footage in the 26 Oct reel? (rights + honesty before using it in ads)
 - Selling price per item and landed cost incl. shipping (keep OUT of repo).
