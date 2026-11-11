@@ -190,6 +190,9 @@ This is about TWO-THIRDS of all stock by money and units. It must sell, not just
   Raw footage = owner's. The edited version (cuts, music, text) was made by the maker — for ads, make Tessera's OWN new edit
   from the raw clips (own text, Meta commercial-safe music, Tessera branding) so it is original and not identical to the maker's post.
   The maker's post describes it as a workshop that the owner's family attended.
+  The maker's edit has THEIR logo + Instagram handle burned into every frame, a commercial film song, ~94 s, 512x910 (low quality).
+  NEVER use or re-cut that file (watermark advertises the supplier; music blocks ads; removing someone's watermark is not OK).
+  Only use the owner's ORIGINAL phone clips.
   So the honest story (matches the maker's post): "I travelled to Idukki, Kerala to see how our pieces are made and
   laid the leaves with the artisans myself." Never imply Tessera makes the pieces. Ask for more raw clips from that visit.
 - Do NOT name or tag the supplier in public posts/ads (customers could buy direct). Credit as "artisans in Idukki, Kerala".
