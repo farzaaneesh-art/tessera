@@ -88,7 +88,8 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - IMG_3415 — ombre to magenta dupatta
 
 ## Account & ordering (confirmed by user)
-- Instagram handle: **@weartessera** (user wrote "Wear tessera"; exact spelling not yet confirmed — check for a dot/underscore)
+- Instagram handle: **@weartessera** (confirmed via Metricool)
+- Metricool brand id for analytics/scheduling: **7805847** (timezone Asia/Dubai)
 - How to order: **Instagram DM** or **WhatsApp +971 50 525 2491**
 - Default caption CTA: "DM us or WhatsApp +971 50 525 2491 to order."
 - WhatsApp link (for stories/bio): https://wa.me/971505252491
@@ -112,6 +113,22 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - Fonts: logo is a Trajan-style serif. Use **Cinzel** (free, Google Fonts) for short headlines in caps,
   and a soft serif like **Cormorant Garamond** for lines/taglines. No modern sans-serif headlines.
 - Post style: cream background or full-bleed photo, olive text, thin gold rule, small logo bottom corner. Calm, lots of space.
+
+## Performance learnings (Metricool data, account start 7 Oct 2026 → 11 Nov 2026)
+- 18 followers, following only 4. 15 reels + 6 carousels posted.
+- Reels reach new people (60–1,800 reach). Carousels reach almost nobody (6–19 reach). Use reels for growth; carousels max 1/week.
+- Best by far: PROCESS / STORY reels about ecoprint (26 Oct leaf-laying + reveal: 2,248 views, 65% kept watching;
+  27 Oct "why handmade costs more": 488 views, 6 saves, 8 shares). Every product-showcase reel: 60–215 views, 70–88% skipped.
+- So: open with motion/reveal in the first second, on-screen text hook, tell the making story. Product-only = skipped.
+- Use ONE call to action consistently (past posts mixed DM ECO / DM KAFTAN / comment RED / WhatsApp).
+- Hashtags: 5 max, check spacing (past posts had broken tags like "# modal silk").
+
+## Fabric/craft claims the user has already made publicly (check before reusing; not mapped to photo files)
+- Ecoprint kaftans: called "modal" (8 Oct) AND "pure silk"/"silk" (10 Oct, 24 Oct) — inconsistent, ask which piece is which.
+- Bandhani suits in modal silk (blue w/ gold border, pink w/ zari border, red w/ lagdi patta dupatta).
+- Mustard Chanderi block-print 3-piece set with maroon accents; yellow-green Chanderi 3-piece set.
+- Ajrakh Mashru silk 2-piece; Ajrakh velvet (3 designs, 2.5 m each); Bagh print modal silk.
+- Sourcing: "UAE | Kerala", "Curated Indian craftsmanship".
 
 ## Open questions for the user (fill in as answered)
 - Price display (yes/no)?
