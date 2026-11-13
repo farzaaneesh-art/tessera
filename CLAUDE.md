@@ -39,7 +39,7 @@ It is the standing brief for all Tessera work, mainly **Instagram posts**.
 |---|---|
 | Ajrakh Modal (2.5 m unstitched) | pure Ajrakh, handmade, hand block printed, naturally dyed, modal ("modal silk" in user's words). Visible print irregularities = proof of hand block printing; use this as a selling point. Files: instagram/TESSERA_AJRAKH_MODAL_FINAL/ |
 
-| Yellow Leaf Print Linen | linen (confirmed), yellow, large real-leaf prints (deep plum + pale brown). User believes the leaves are teak; visually consistent with teak (very large broad leaves, net veins, plum colour) but not supplier-confirmed. Length and dye type not confirmed. Clips: some in sunlight, some under bulb light (bulb clips need a light warm correction). Never mix with kaftan footage. Files: instagram/2026-11-13-leaf-print-linen/ |
+| Teak Leaf Ecoprint Linen (2 m unstitched) | confirmed by user 2026-11-13: linen, ecoprint, teak leaves, 2 metres. Yellow base (dye type not confirmed). Originals are 1440x1920 HEVC MOV — always ask for originals, not compressed copies. Some clips under bulb light need a light warm correction. Never mix with kaftan footage (IMG_3533-3537). Files: instagram/2026-11-13-leaf-print-linen/ |
 
 Note on "modal silk": modal is a plant-based fibre (from beech wood), not silk. Prefer "modal" or "silky modal" in public copy unless the user says otherwise.
 
