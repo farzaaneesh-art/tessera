@@ -20,6 +20,13 @@ It is the standing brief for all Tessera work, mainly **Instagram posts**.
 - Save finished posts in `instagram/<YYYY-MM-DD>-<topic>/` with the image(s) and a `caption.txt` (caption + hashtags).
 - Commit and push finished posts so they persist (the cloud container is wiped after the session).
 
+## AI-edited photos (owner uses ChatGPT to change backgrounds — 13 Nov 2026)
+- AI background = OK. But ChatGPT re-draws the WHOLE image, so leaf shapes, vein detail and colours shift slightly
+  (seen: warmer/peach tint, purple leaves turn browner, lilac tones lost). Always compare side by side with the real photo.
+- In every post that uses an AI-styled image, include at least one untouched real photo or real video of the same piece,
+  so buyers see the true print and colour. Never AI-edit the fabric itself.
+- Owner's own natural-light photos (golden window light on draped fabric) are already premium — prefer them.
+
 ## Confirmed product names (catalog PNGs in repo root)
 | File | Name | Confirmed details |
 |---|---|---|
