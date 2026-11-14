@@ -1,3 +1,5 @@
-# Ajrakh modal silk kurta fabric (2.5 m) reel — HERITAGE range (not ecoprint), several pieces in stock
-17 s, 1080x1920, no music. Clips: IMG_2908 fold drop -> IMG_2911 lift -> IMG_2904 close-up -> IMG_2903 neckline -> IMG_2947 hanging -> end card.
-End card tagline "Curated Indian craft." (not "Wear nature.") because this is heritage, not ecoprint. Suggested post: Mon 16 Nov, 10:00 AM.
+# Ajrakh modal silk kurta fabric reel — HERITAGE range, several in stock (v2 "fast edit", 14 Nov)
+13 s, 1080x1920, no music. 9 fast cuts (~1 s each) with speed-ups and punch-in zooms, bold one-word text
+(INDIGO / RUST / AJRAKH / on modal silk), slow push-in on the hanging piece ("Made to be noticed."), 1.8 s end card.
+Cuts are ~1 s apart: choose an upbeat track around 120 BPM so cuts land roughly on the beat.
+Suggested post: Mon 16 Nov, 10:00 AM (Dubai).
