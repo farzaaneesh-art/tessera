@@ -34,6 +34,9 @@ It is the standing brief for all Tessera work, mainly **Instagram posts**.
 | yellow-kaftan-tessera.png.png | Yellow Kaftan Tessera | botanical prints |
 | yellow-marigold-modal.png.png | Yellow Marigold Modal | modal fabric |
 
+## Confirmed by user (videos)
+- Striped fabric in `instagram/2026-11-17-ajrakh-modal-reel/` (cream with brown pinstripes, red stripes, blue + brown border): **ajrakh, modal fabric, natural dye**. Hand-block-printed NOT confirmed.
+
 ## Photo library inventory (`images/library/`) — visual only, NAMES/FABRICS UNCONFIRMED
 Built from the contact sheet. Ask the user before naming a product publicly.
 
