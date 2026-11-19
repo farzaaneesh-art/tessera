@@ -94,13 +94,14 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - IMG_3391 — white shirt, pink floral
 - IMG_3415 — ombre to magenta dupatta
 
-## New photos 19 Nov 2026 — `images/library/2026-11-19/` (see its CONTACT_SHEET.jpg) — visual only, FABRIC/RANGE UNCONFIRMED
+## New photos 19 Nov 2026 — `images/library/2026-11-19/` (see its CONTACT_SHEET.jpg) — CONFIRMED: all 4 are ECOPRINT KAFTANS in MODAL SILK
 Owner's real photos (golden window light, monstera, cream rug). 4 pieces, files named by piece:
 - green-paleyellow-lace (IMG_3080, 3084, 3089): green satin-look body + pale yellow leaf-print panel with brown/purple leaves, cream lace trim
 - green-orangeleaf (IMG_3022, 3024): green V-neck kaftan/top + bright yellow-orange leaf-print panel with pink spots, lace trim
 - green-mustardmarble (IMG_3009, 3020): green body + mustard/olive marbled print panel (3009 has a slipper visible at bottom — crop)
 - red-velvet-fern-yoke (IMG_3066, 3075, 3076, 3077): deep red satin-look body + velvet yoke with yellow fern prints
-Ask owner: ecoprint range or heritage? fabric? kaftan or suit set? one-of-a-kind or multiple?
+Owner confirmed (19 Nov): every piece is an ecoprinted modal silk kaftan; the ecoprint differs on each piece, so each print is one of a kind.
+The red piece's yoke looks like velvet — NOT confirmed, don't write "velvet" until owner says so.
 
 ## Account & ordering (confirmed by user)
 - Instagram handle: **@weartessera** (confirmed via Metricool)
