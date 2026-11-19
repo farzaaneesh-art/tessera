@@ -101,13 +101,20 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - CONFIRMED 2026-11-09: 3 separate designs (A, B, C in NOTES.md), 2.5 m fabric each (unit assumed metres), good for winter.
 - Unconfirmed until user says so: product names, fibre (type of velvet), hand-block/natural-dye claim, price.
 
+## Ecoprint kaftans — Nov 2026 shoot (`images/ecoprint-kaftans-nov/`, added 2026-11-19)
+- CONFIRMED by user: all three are **ecoprinted kaftans** (one-of-a-kind applies). Names and fabrics NOT confirmed.
+- Olive kaftan, pale leaf-print lower panel, lace seam: IMG_3080 (styled), 3084, 3087, 3088, 3089 → posted 20 Nov.
+- Red kaftan with fern-print yoke: IMG_3071, 3072, 3075, 3076 (styled, hanger), 3077 (yoke close-up) → posted 22 Nov.
+- Green kaftan, marigold/pink leaf-print lower panel, lace seam: IMG_3021, 3022 (neck), 3024 (styled), 3025 (close), 3026 → posted 24 Nov.
+
 ## Account & ordering (confirmed by user)
 - Instagram handle: **@weartessera** (confirmed 2026-11-07 via Metricool — no dot/underscore)
 - **Which tool for what (decided by user 2026-11-07):**
   - **Scheduling → Metricool** (brand "weartessera", blogId 7805847, timezone Asia/Dubai). All planned/future posts go here.
   - **Comments + quick "post now" → direct Instagram API** via **`graph.facebook.com`** (NOT graph.instagram.com).
   - Never post the same content through both tools — check Metricool's schedule before a quick post to avoid duplicates.
-- Direct API setup (WORKING, verified 2026-11-07):
+- Direct API setup (verified working 2026-11-07; **BLOCKED since at least 2026-11-19**: Meta returns
+  "API access blocked" (code 200, subcode 5258005). Check the app's Required actions / alerts in the Meta developer dashboard.):
   - Meta app: **"tessera poster"** (app ID 1908856527152557), Instagram API with **Unified login**
     (Meta no longer offers "Instagram login" for new apps). Configuration ID 1438532388484547.
   - Instagram Business Account ID: **17841480006031639** (@weartessera). Use it as the node in every call.
