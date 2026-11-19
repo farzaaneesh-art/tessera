@@ -102,7 +102,8 @@ Built from the contact sheet. Ask the user before naming a product publicly.
 - Unconfirmed until user says so: product names, fibre (type of velvet), hand-block/natural-dye claim, price.
 
 ## Ecoprint kaftans — Nov 2026 shoot (`images/ecoprint-kaftans-nov/`, added 2026-11-19)
-- CONFIRMED by user: all three are **ecoprinted kaftans** (one-of-a-kind applies). Names and fabrics NOT confirmed.
+- CONFIRMED by user: all three are **modal silk** ecoprinted kaftans (one-of-a-kind applies).
+  Red one: modal silk kaftan with the **ecoprint on a velvet yoke**. Olive and green/marigold: modal silk with ecoprint panels. Names NOT confirmed.
 - Olive kaftan, pale leaf-print lower panel, lace seam: IMG_3080 (styled), 3084, 3087, 3088, 3089 → posted 20 Nov.
 - Red kaftan with fern-print yoke: IMG_3071, 3072, 3075, 3076 (styled, hanger), 3077 (yoke close-up) → posted 22 Nov.
 - Green kaftan, marigold/pink leaf-print lower panel, lace seam: IMG_3021, 3022 (neck), 3024 (styled), 3025 (close), 3026 → posted 24 Nov.
