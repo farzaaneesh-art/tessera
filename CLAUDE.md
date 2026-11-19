@@ -114,8 +114,10 @@ Built from the contact sheet. Ask the user before naming a product publicly.
   - **Scheduling → Metricool** (brand "weartessera", blogId 7805847, timezone Asia/Dubai). All planned/future posts go here.
   - **Comments + quick "post now" → direct Instagram API** via **`graph.facebook.com`** (NOT graph.instagram.com).
   - Never post the same content through both tools — check Metricool's schedule before a quick post to avoid duplicates.
-- Direct API setup (verified working 2026-11-07; **BLOCKED since at least 2026-11-19**: Meta returns
-  "API access blocked" (code 200, subcode 5258005). Check the app's Required actions / alerts in the Meta developer dashboard.):
+- Direct API setup (working; verified 2026-11-07 and again 2026-11-19):
+  - Was BLOCKED on 2026-11-19 ("API access blocked", code 200, subcode 5258005). Cause: a pending security
+    checkpoint on the user's Facebook account (URL showed `checkpoint_src=`). App itself had 0 required actions.
+    Fix: user completes the Facebook security check / Accounts Center, then the same token works again. No new token needed.
   - Meta app: **"tessera poster"** (app ID 1908856527152557), Instagram API with **Unified login**
     (Meta no longer offers "Instagram login" for new apps). Configuration ID 1438532388484547.
   - Instagram Business Account ID: **17841480006031639** (@weartessera). Use it as the node in every call.
